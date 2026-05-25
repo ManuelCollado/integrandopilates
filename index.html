@@ -178,8 +178,8 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
     </div>
 
     <div class="local-switch">
-      <button class="local-btn active" id="btn-urquiza" onclick="setLocal('urquiza')">Urquiza</button>
-      <button class="local-btn" id="btn-florida" onclick="setLocal('florida')">Florida</button>
+      <button class="local-btn active" id="btn-florida" onclick="setLocal('florida')">Florida</button>
+      <button class="local-btn" id="btn-urquiza" onclick="setLocal('urquiza')">Urquiza</button>
     </div>
 
     <nav class="sidebar-nav" id="nav-urquiza">
@@ -950,11 +950,10 @@ function doLogin(){
   const btnFlorida = document.getElementById('btn-florida');
   if(!u.acceso.includes('florida')){
     btnFlorida.style.display = 'none';
-    // forzar urquiza
     setLocal('urquiza');
   } else {
     btnFlorida.style.display = '';
-    setLocal('urquiza');
+    setLocal('florida');
   }
 
   // Nombre en topbar
