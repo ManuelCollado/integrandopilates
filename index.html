@@ -749,7 +749,6 @@ function renderGrilla(){
 
 // ─── Florida: Dashboard ───────────────────────────────────────────────────
 function setMesFlorida(m){
-  if(m!=='total' && mesFlorida===m){ m='total'; }
   mesFlorida=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
   document.querySelectorAll('#screen-fl-dashboard .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
@@ -786,7 +785,6 @@ function renderFlDashboard(){
 
 // ─── Florida: P&L ─────────────────────────────────────────────────────────
 function setMesPnl(m){
-  if(m!=='total' && mesPnl===m){ m='total'; }
   mesPnl=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
   document.querySelectorAll('#screen-fl-pnl .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
@@ -819,7 +817,6 @@ function renderPnl(m){
 
 // ─── Florida: Gastos por categoría ────────────────────────────────────────
 function setMesGastos(m){
-  if(m!=='total' && mesGastos===m){ m='total'; }
   mesGastos=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
   document.querySelectorAll('#screen-fl-gastos .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
