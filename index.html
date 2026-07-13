@@ -388,6 +388,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
             <button class="month-tab" onclick="setMesFlorida('Abril')">Abr</button>
             <button class="month-tab" onclick="setMesFlorida('Mayo')">May</button>
             <button class="month-tab" onclick="setMesFlorida('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesFlorida('Julio')">Jul</button>
             <button class="month-tab" onclick="setMesFlorida('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
           </div>
         </div>
@@ -421,6 +422,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
             <button class="month-tab" onclick="setMesPnl('Abril')">Abr</button>
             <button class="month-tab" onclick="setMesPnl('Mayo')">May</button>
             <button class="month-tab" onclick="setMesPnl('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesPnl('Julio')">Jul</button>
             <button class="month-tab" onclick="setMesPnl('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
           </div>
         </div>
@@ -445,6 +447,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
             <button class="month-tab" onclick="setMesGastos('Abril')">Abr</button>
             <button class="month-tab" onclick="setMesGastos('Mayo')">May</button>
             <button class="month-tab" onclick="setMesGastos('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesGastos('Julio')">Jul</button>
             <button class="month-tab" onclick="setMesGastos('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
           </div>
         </div>
@@ -552,13 +555,15 @@ const FLORIDA = {
   Febrero:{ventas:10034201,devolucion:-164750,gastos_fijos:7813849,gastos_var:792623,gastos_total:8606472,neto:1262978,
     detalle:[{cat:'Alquiler',monto:1756142,tipo:'fijo'},{cat:'ABL/AYSA',monto:130419,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:431425,tipo:'fijo'},{cat:'Atención al cliente',monto:150000,tipo:'fijo'},{cat:'Publicidad',monto:307397,tipo:'fijo'},{cat:'Sueldos',monto:3076000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:280500,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:77680,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:146451,tipo:'fijo'},{cat:'Slake',monto:29730,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Logo H',monto:215000,tipo:'variable'},{cat:'Ventilador',monto:116799,tipo:'variable'},{cat:'Supermercado',monto:31048,tipo:'variable'},{cat:'Otros variables',monto:429776,tipo:'variable'}]},
   Marzo:{ventas:11977360,devolucion:0,gastos_fijos:9112699,gastos_var:4597617,gastos_total:13710316,neto:-1732956,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:431425,tipo:'fijo'},{cat:'Atención al cliente',monto:250000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:500000,tipo:'fijo'},{cat:'Sueldos',monto:3903000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:190000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:110000,tipo:'fijo'},{cat:'Slake',monto:62847,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Publicidad',monto:40000,tipo:'fijo'},{cat:'Camas',monto:2650000,tipo:'variable'},{cat:'Balanza',monto:580000,tipo:'variable'},{cat:'Instalación Aires',monto:300000,tipo:'variable'},{cat:'Mueble',monto:480000,tipo:'variable'},{cat:'Envío',monto:100000,tipo:'variable'},{cat:'Almohaditas',monto:78500,tipo:'variable'},{cat:'Otros variables',monto:409117,tipo:'variable'}]},
+    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:431425,tipo:'fijo'},{cat:'Atención al cliente',monto:250000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:500000,tipo:'fijo'},{cat:'Sueldos',monto:3903000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:190000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:110000,tipo:'fijo'},{cat:'Slake',monto:62847,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Publicidad',monto:40000,tipo:'fijo'},{cat:'Camas',monto:2650000,tipo:'variable'},{cat:'Balanza',monto:580000,tipo:'variable'},{cat:'Instalación Aires',monto:300000,tipo:'variable'},{cat:'Mueble',monto:480000,tipo:'variable'},{cat:'Envío',monto:100000,tipo:'variable'},{cat:'Almohaditas',monto:78500,tipo:'variable'},{cat:'Supermercado',monto:23917,tipo:'variable'},{cat:'Otros variables',monto:384783,tipo:'variable'}]},
   Abril:{ventas:13114953,devolucion:-36000,gastos_fijos:9441878,gastos_var:1055058,gastos_total:10496936,neto:2582017,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:417000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:637500,tipo:'fijo'},{cat:'Sueldos',monto:4097000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:410000,tipo:'fijo'},{cat:'Ambulancia',monto:30250,tipo:'fijo'},{cat:'Luz',monto:76429,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Publicidad Meta',monto:417800,tipo:'variable'},{cat:'Publicidad Google',monto:100000,tipo:'variable'},{cat:'VEP INPI',monto:70560,tipo:'variable'},{cat:'Otros variables',monto:466698,tipo:'variable'}]},
-  Mayo:{ventas:15259000,devolucion:0,gastos_fijos:10208016,gastos_var:1756944,gastos_total:11877959,neto:3294041,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:700000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4159500,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Limpieza',monto:304000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:38111,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Publicidad Meta',monto:504807,tipo:'variable'},{cat:'Publicidad Google',monto:60000,tipo:'variable'},{cat:'Estufas',monto:270614,tipo:'variable'},{cat:'Buzos',monto:288000,tipo:'variable'},{cat:'Regalos',monto:45500,tipo:'variable'},{cat:'Melita',monto:150000,tipo:'variable'},{cat:'Supermercado',monto:22523,tipo:'variable'},{cat:'Accesorios',monto:87000,tipo:'variable'},{cat:'Otros variables',monto:328500,tipo:'variable'}]},
-  Junio:{ventas:14940978,devolucion:-29250,gastos_fijos:12064969,gastos_var:2519780,gastos_total:14584749,neto:1416979,pendientes:1090000,
-    detalle:[{cat:'Alquiler 1',monto:1448200,tipo:'fijo'},{cat:'Alquiler 2',monto:629600,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:840000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4278000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:100208,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Aguinaldos',monto:1362667,tipo:'fijo'},{cat:'Limpieza',monto:304000,tipo:'fijo'},{cat:'Publicidad Meta',monto:489335,tipo:'variable'},{cat:'Refacción',monto:1345000,tipo:'variable'},{cat:'Antideslizantes',monto:50000,tipo:'variable'},{cat:'Cortinas',monto:39000,tipo:'variable'},{cat:'Alfombra',monto:28799,tipo:'variable'},{cat:'Almohadones',monto:22609,tipo:'variable'},{cat:'Banqueta',monto:68000,tipo:'variable'},{cat:'Pisos de goma',monto:72590,tipo:'variable'},{cat:'Otros variables',monto:403647,tipo:'variable'}]}
+    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:417000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:637500,tipo:'fijo'},{cat:'Sueldos',monto:4097000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:410000,tipo:'fijo'},{cat:'Ambulancia',monto:30250,tipo:'fijo'},{cat:'Luz',monto:76429,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Viaticos',monto:14300,tipo:'fijo'},{cat:'Publicidad Meta',monto:417800,tipo:'variable'},{cat:'Publicidad Google',monto:100000,tipo:'variable'},{cat:'VEP INPI',monto:70560,tipo:'variable'},{cat:'Café',monto:10340,tipo:'variable'},{cat:'Tasa Seg e Higiene',monto:7059,tipo:'variable'},{cat:'Otros',monto:10000,tipo:'variable'},{cat:'Otros variables',monto:449299,tipo:'variable'}]},
+  Mayo:{ventas:15243606,devolucion:-19000,gastos_fijos:10191845,gastos_var:1901044,gastos_total:12092889,neto:3131716,
+    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:700000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4159500,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Limpieza',monto:304000,tipo:'fijo'},{cat:'Luz',monto:38111,tipo:'fijo'},{cat:'Slake',monto:33403,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Publicidad Meta',monto:504807,tipo:'variable'},{cat:'Publicidad Google',monto:60000,tipo:'variable'},{cat:'Estufas',monto:270614,tipo:'variable'},{cat:'Buzos',monto:288000,tipo:'variable'},{cat:'Regalos',monto:45500,tipo:'variable'},{cat:'Melita',monto:150000,tipo:'variable'},{cat:'Supermercado',monto:25523,tipo:'variable'},{cat:'Viaticos',monto:17500,tipo:'variable'},{cat:'Accesorios',monto:87000,tipo:'variable'},{cat:'Café',monto:19100,tipo:'variable'},{cat:'Tuenti',monto:2000,tipo:'variable'},{cat:'Camisetas',monto:120000,tipo:'variable'},{cat:'Productos Limpieza',monto:7000,tipo:'variable'},{cat:'Otros variables',monto:304000,tipo:'variable'}]},
+  Junio:{ventas:15568032,devolucion:110750,gastos_fijos:12526298,gastos_var:3465051,gastos_total:15991349,neto:-534067,pendientes:0,
+    detalle:[{cat:'Alquiler 1',monto:1448200,tipo:'fijo'},{cat:'Alquiler 2',monto:629600,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:840000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4343000,tipo:'fijo'},{cat:'Luz',monto:100208,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Slake',monto:33403,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:27498,tipo:'fijo'},{cat:'Aguinaldos',monto:1762667,tipo:'fijo'},{cat:'Limpieza',monto:581200,tipo:'fijo'},{cat:'Telecom Mayo',monto:36524,tipo:'fijo'},{cat:'Seguro Mayo',monto:19610,tipo:'fijo'},{cat:'Telecom Junio',monto:37800,tipo:'fijo'},{cat:'Seguro Junio',monto:19610,tipo:'fijo'},{cat:'Publicidad Meta',monto:489335,tipo:'variable'},{cat:'Refacción',monto:1345000,tipo:'variable'},{cat:'Antideslizantes',monto:50000,tipo:'variable'},{cat:'Cortinas',monto:39000,tipo:'variable'},{cat:'Alfombra consultorio',monto:28799,tipo:'variable'},{cat:'Almohadones',monto:22609,tipo:'variable'},{cat:'Banqueta',monto:68000,tipo:'variable'},{cat:'Pisos de goma',monto:72590,tipo:'variable'},{cat:'Sodimac Pintura',monto:18297,tipo:'variable'},{cat:'Rieles cortina',monto:35000,tipo:'variable'},{cat:'Picaportes puertas',monto:17950,tipo:'variable'},{cat:'Ferretería',monto:18000,tipo:'variable'},{cat:'Puerta Corrediza',monto:69600,tipo:'variable'},{cat:'Envío',monto:20000,tipo:'variable'},{cat:'Supermercado',monto:15568,tipo:'variable'},{cat:'Mantenimiento camas',monto:137000,tipo:'variable'},{cat:'Rawa',monto:235961,tipo:'variable'},{cat:'Deco Argentina',monto:5200,tipo:'variable'},{cat:'Cámara de seguridad',monto:71198,tipo:'variable'},{cat:'Otros',monto:11200,tipo:'variable'}]},
+  Julio:{ventas:14262000,devolucion:0,gastos_fijos:11265671,gastos_var:1359160,gastos_total:12624831,neto:2150169,pendientes:513000,
+    detalle:[{cat:'Alquiler 1',monto:1448200,tipo:'fijo'},{cat:'Alquiler 2',monto:629600,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:340000,tipo:'fijo'},{cat:'Atención al cliente',monto:840000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4665000,tipo:'fijo'},{cat:'Ambulancia',monto:31997,tipo:'fijo'},{cat:'Luz',monto:188806,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Seguro',monto:19584,tipo:'fijo'},{cat:'Telecom',monto:29340,tipo:'fijo'},{cat:'Limpieza',monto:400000,tipo:'fijo'},{cat:'Publicidad Meta',monto:277500,tipo:'variable'},{cat:'Café',monto:17000,tipo:'variable'},{cat:'Memorias',monto:76000,tipo:'variable'},{cat:'Comisión Cajero',monto:5900,tipo:'variable'},{cat:'Biombos',monto:178260,tipo:'variable'},{cat:'Cortinas',monto:320000,tipo:'variable'},{cat:'Productos limpieza',monto:52500,tipo:'variable'},{cat:'Aromatizadores pilates',monto:32000,tipo:'variable'}]}
 };
 
 // ─── Estado ───────────────────────────────────────────────────────────────
@@ -566,9 +571,9 @@ let localActivo = 'urquiza';
 let mesDash = 'abril';
 let mesAbonos = 'abril';
 let abonosFiltro = '';
-let mesFlorida = 'Junio';
-let mesPnl = 'Junio';
-let mesGastos = 'Junio';
+let mesFlorida = 'Julio';
+let mesPnl = 'Julio';
+let mesGastos = 'Julio';
 let evolChart = null, flEvolChart = null;
 
 // ─── Switch local ─────────────────────────────────────────────────────────
@@ -769,8 +774,8 @@ function renderFlDashboard(){
 
   setTimeout(()=>{
     if(flEvolChart)flEvolChart.destroy();
-    const meses=['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'];
-    const labels=['Nov','Dic','Ene','Feb','Mar','Abr','May','Jun'];
+    const meses=['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+    const labels=['Nov','Dic','Ene','Feb','Mar','Abr','May','Jun','Jul'];
     const vData=meses.map(m=>FLORIDA[m].ventas+(FLORIDA[m].devolucion||0));
     const gData=meses.map(m=>FLORIDA[m].gastos_total);
     const nData=meses.map(m=>FLORIDA[m].neto);
@@ -857,7 +862,9 @@ const RETIROS_DATA = [
   {fecha:'7 may 2026', concepto:'Compra USD Oficial', tc:1402, total_ars:3000000,
    socios:{Manuel:{ars:1120248,usd:799.04}, Merlina:{ars:514514,usd:366.99}, Juan:{ars:1365238,usd:973.78}}},
   {fecha:'10 jun 2026', concepto:'Compra USD Oficial', tc:1445, total_ars:1000000,
-   socios:{Manuel:{ars:373416,usd:258.42}, Merlina:{ars:171505,usd:118.69}, Juan:{ars:455079,usd:314.93}}}
+   socios:{Manuel:{ars:373416,usd:258.42}, Merlina:{ars:171505,usd:118.69}, Juan:{ars:455079,usd:314.93}}},
+  {fecha:'13 jul 2026', concepto:'Compra USD Oficial', tc:1505, total_ars:1900000,
+   socios:{Manuel:{ars:709490,usd:471.42}, Merlina:{ars:325859,usd:216.52}, Juan:{ars:864651,usd:574.52}}}
 ];
 const INVERSION = {
   Manuel:{usd:6264.03, pct:37.4},
@@ -992,7 +999,7 @@ function doLogout(){
 
 
 // ─── Florida: Acumulado ───────────────────────────────────────────────────
-const FL_MESES = ['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'];
+const FL_MESES = ['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
 
 function renderFlDashboardTotal(){
   const totalVentas = FL_MESES.reduce((s,m)=>s+FLORIDA[m].ventas+(FLORIDA[m].devolucion||0),0);
