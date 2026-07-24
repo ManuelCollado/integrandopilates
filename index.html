@@ -546,25 +546,586 @@ const DONADO = {
 
 // ─── Datos Florida ────────────────────────────────────────────────────────
 const FLORIDA = {
-  Noviembre:{ventas:3669000,devolucion:0,gastos_fijos:4330035,gastos_var:230250,gastos_total:4560285,neto:-891285,
-    detalle:[{cat:'Alquiler',monto:1500000,tipo:'fijo'},{cat:'ABL/AYSA',monto:102393,tipo:'fijo'},{cat:'Siguefit',monto:33900,tipo:'fijo'},{cat:'Marketing',monto:400000,tipo:'fijo'},{cat:'Atención al cliente',monto:150000,tipo:'fijo'},{cat:'Limpieza',monto:133000,tipo:'fijo'},{cat:'Luz',monto:7826,tipo:'fijo'},{cat:'Monotributo',monto:46916,tipo:'fijo'},{cat:'Otros',monto:230250,tipo:'variable'}]},
-  Diciembre:{ventas:7591600,devolucion:0,gastos_fijos:6047003,gastos_var:673123,gastos_total:6720126,neto:871474,
-    detalle:[{cat:'Alquiler',monto:1756142,tipo:'fijo'},{cat:'ABL/AYSA',monto:102612,tipo:'fijo'},{cat:'Siguefit',monto:33900,tipo:'fijo'},{cat:'Marketing',monto:400000,tipo:'fijo'},{cat:'Atención al cliente',monto:150000,tipo:'fijo'},{cat:'Publicidad',monto:144844,tipo:'fijo'},{cat:'Sueldos',monto:3291000,tipo:'fijo'},{cat:'Limpieza',monto:122000,tipo:'fijo'},{cat:'Ambulancia',monto:45082,tipo:'fijo'},{cat:'Luz',monto:11355,tipo:'fijo'},{cat:'Habilitación',monto:230000,tipo:'variable'},{cat:'Diseñadora',monto:231000,tipo:'variable'},{cat:'Otros variables',monto:212123,tipo:'variable'}]},
-  Enero:{ventas:8726037,devolucion:-53000,gastos_fijos:6188674,gastos_var:713624,gastos_total:6902298,neto:1770739,
-    detalle:[{cat:'Alquiler',monto:1756142,tipo:'fijo'},{cat:'ABL/AYSA',monto:130419,tipo:'fijo'},{cat:'Siguefit',monto:33900,tipo:'fijo'},{cat:'Marketing',monto:400000,tipo:'fijo'},{cat:'Atención al cliente',monto:150000,tipo:'fijo'},{cat:'Publicidad',monto:147490,tipo:'fijo'},{cat:'Sueldos',monto:3401000,tipo:'fijo'},{cat:'Limpieza',monto:223000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:163991,tipo:'fijo'},{cat:'Slake',monto:71872,tipo:'fijo'},{cat:'Monotributos',monto:45701,tipo:'fijo'},{cat:'Supermercado',monto:50145,tipo:'variable'},{cat:'Transferencias',monto:279989,tipo:'variable'},{cat:'Otros variables',monto:383490,tipo:'variable'}]},
-  Febrero:{ventas:10034201,devolucion:-164750,gastos_fijos:7813849,gastos_var:792623,gastos_total:8606472,neto:1262978,
-    detalle:[{cat:'Alquiler',monto:1756142,tipo:'fijo'},{cat:'ABL/AYSA',monto:130419,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:431425,tipo:'fijo'},{cat:'Atención al cliente',monto:150000,tipo:'fijo'},{cat:'Publicidad',monto:307397,tipo:'fijo'},{cat:'Sueldos',monto:3076000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:280500,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:77680,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:146451,tipo:'fijo'},{cat:'Slake',monto:29730,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Logo H',monto:215000,tipo:'variable'},{cat:'Ventilador',monto:116799,tipo:'variable'},{cat:'Supermercado',monto:31048,tipo:'variable'},{cat:'Otros variables',monto:429776,tipo:'variable'}]},
-  Marzo:{ventas:11977360,devolucion:0,gastos_fijos:9112699,gastos_var:4597617,gastos_total:13710316,neto:-1732956,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:431425,tipo:'fijo'},{cat:'Atención al cliente',monto:250000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:500000,tipo:'fijo'},{cat:'Sueldos',monto:3903000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:190000,tipo:'fijo'},{cat:'Ambulancia',monto:18150,tipo:'fijo'},{cat:'Luz',monto:110000,tipo:'fijo'},{cat:'Slake',monto:62847,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Publicidad',monto:40000,tipo:'fijo'},{cat:'Camas',monto:2650000,tipo:'variable'},{cat:'Balanza',monto:580000,tipo:'variable'},{cat:'Instalación Aires',monto:300000,tipo:'variable'},{cat:'Mueble',monto:480000,tipo:'variable'},{cat:'Envío',monto:100000,tipo:'variable'},{cat:'Almohaditas',monto:78500,tipo:'variable'},{cat:'Supermercado',monto:23917,tipo:'variable'},{cat:'Otros variables',monto:384783,tipo:'variable'}]},
-  Abril:{ventas:13114953,devolucion:-36000,gastos_fijos:9441878,gastos_var:1055058,gastos_total:10496936,neto:2582017,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:138134,tipo:'fijo'},{cat:'Siguefit',monto:42800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:417000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:637500,tipo:'fijo'},{cat:'Sueldos',monto:4097000,tipo:'fijo'},{cat:'Sueldo Merlina',monto:1700000,tipo:'fijo'},{cat:'Limpieza',monto:410000,tipo:'fijo'},{cat:'Ambulancia',monto:30250,tipo:'fijo'},{cat:'Luz',monto:76429,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Viaticos',monto:14300,tipo:'fijo'},{cat:'Publicidad Meta',monto:417800,tipo:'variable'},{cat:'Publicidad Google',monto:100000,tipo:'variable'},{cat:'VEP INPI',monto:70560,tipo:'variable'},{cat:'Café',monto:10340,tipo:'variable'},{cat:'Tasa Seg e Higiene',monto:7059,tipo:'variable'},{cat:'Otros',monto:10000,tipo:'variable'},{cat:'Otros variables',monto:449299,tipo:'variable'}]},
-  Mayo:{ventas:15243606,devolucion:-19000,gastos_fijos:10191845,gastos_var:1901044,gastos_total:12092889,neto:3131716,
-    detalle:[{cat:'Alquiler',monto:1904110,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:700000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4159500,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Limpieza',monto:304000,tipo:'fijo'},{cat:'Luz',monto:38111,tipo:'fijo'},{cat:'Slake',monto:33403,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Publicidad Meta',monto:504807,tipo:'variable'},{cat:'Publicidad Google',monto:60000,tipo:'variable'},{cat:'Estufas',monto:270614,tipo:'variable'},{cat:'Buzos',monto:288000,tipo:'variable'},{cat:'Regalos',monto:45500,tipo:'variable'},{cat:'Melita',monto:150000,tipo:'variable'},{cat:'Supermercado',monto:25523,tipo:'variable'},{cat:'Viaticos',monto:17500,tipo:'variable'},{cat:'Accesorios',monto:87000,tipo:'variable'},{cat:'Café',monto:19100,tipo:'variable'},{cat:'Tuenti',monto:2000,tipo:'variable'},{cat:'Camisetas',monto:120000,tipo:'variable'},{cat:'Productos Limpieza',monto:7000,tipo:'variable'},{cat:'Otros variables',monto:304000,tipo:'variable'}]},
-  Junio:{ventas:15568032,devolucion:110750,gastos_fijos:12526298,gastos_var:3465051,gastos_total:15991349,neto:-534067,pendientes:0,
-    detalle:[{cat:'Alquiler 1',monto:1448200,tipo:'fijo'},{cat:'Alquiler 2',monto:629600,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:315000,tipo:'fijo'},{cat:'Atención al cliente',monto:840000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4343000,tipo:'fijo'},{cat:'Luz',monto:100208,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Slake',monto:33403,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:27498,tipo:'fijo'},{cat:'Aguinaldos',monto:1762667,tipo:'fijo'},{cat:'Limpieza',monto:581200,tipo:'fijo'},{cat:'Telecom Mayo',monto:36524,tipo:'fijo'},{cat:'Seguro Mayo',monto:19610,tipo:'fijo'},{cat:'Telecom Junio',monto:37800,tipo:'fijo'},{cat:'Seguro Junio',monto:19610,tipo:'fijo'},{cat:'Publicidad Meta',monto:489335,tipo:'variable'},{cat:'Refacción',monto:1345000,tipo:'variable'},{cat:'Antideslizantes',monto:50000,tipo:'variable'},{cat:'Cortinas',monto:39000,tipo:'variable'},{cat:'Alfombra consultorio',monto:28799,tipo:'variable'},{cat:'Almohadones',monto:22609,tipo:'variable'},{cat:'Banqueta',monto:68000,tipo:'variable'},{cat:'Pisos de goma',monto:72590,tipo:'variable'},{cat:'Sodimac Pintura',monto:18297,tipo:'variable'},{cat:'Rieles cortina',monto:35000,tipo:'variable'},{cat:'Picaportes puertas',monto:17950,tipo:'variable'},{cat:'Ferretería',monto:18000,tipo:'variable'},{cat:'Puerta Corrediza',monto:69600,tipo:'variable'},{cat:'Envío',monto:20000,tipo:'variable'},{cat:'Supermercado',monto:15568,tipo:'variable'},{cat:'Mantenimiento camas',monto:137000,tipo:'variable'},{cat:'Rawa',monto:235961,tipo:'variable'},{cat:'Deco Argentina',monto:5200,tipo:'variable'},{cat:'Cámara de seguridad',monto:71198,tipo:'variable'},{cat:'Otros',monto:11200,tipo:'variable'}]},
-  Julio:{ventas:14262000,devolucion:0,gastos_fijos:11265671,gastos_var:1359160,gastos_total:12624831,neto:2150169,pendientes:513000,
-    detalle:[{cat:'Alquiler 1',monto:1448200,tipo:'fijo'},{cat:'Alquiler 2',monto:629600,tipo:'fijo'},{cat:'ABL/AYSA',monto:120690,tipo:'fijo'},{cat:'Siguefit',monto:53800,tipo:'fijo'},{cat:'Marketing',monto:340000,tipo:'fijo'},{cat:'Atención al cliente',monto:840000,tipo:'fijo'},{cat:'Sueldo Manuel',monto:800000,tipo:'fijo'},{cat:'Sueldos',monto:4665000,tipo:'fijo'},{cat:'Ambulancia',monto:31997,tipo:'fijo'},{cat:'Luz',monto:188806,tipo:'fijo'},{cat:'Sueldo Merlina',monto:2000000,tipo:'fijo'},{cat:'Slake',monto:31424,tipo:'fijo'},{cat:'Monotributos',monto:52232,tipo:'fijo'},{cat:'Facturitas',monto:14999,tipo:'fijo'},{cat:'Seguro',monto:19584,tipo:'fijo'},{cat:'Telecom',monto:29340,tipo:'fijo'},{cat:'Limpieza',monto:400000,tipo:'fijo'},{cat:'Publicidad Meta',monto:277500,tipo:'variable'},{cat:'Café',monto:17000,tipo:'variable'},{cat:'Memorias',monto:76000,tipo:'variable'},{cat:'Comisión Cajero',monto:5900,tipo:'variable'},{cat:'Biombos',monto:178260,tipo:'variable'},{cat:'Cortinas',monto:320000,tipo:'variable'},{cat:'Productos limpieza',monto:52500,tipo:'variable'},{cat:'Aromatizadores pilates',monto:32000,tipo:'variable'}]}
+  Noviembre:{ventas:3669000,devolucion:0,pendientes:0,gastos_fijos:4330035,gastos_var:230250,reinversion:0,gastos_total:4560285,neto:-891285,utilidad_pct:-24.3,
+    detalle_fijos:[{cat:'Alquiler',monto:1500000},{cat:'ABL/AYSA',monto:102393},{cat:'Siguefit',monto:33900},{cat:'Marketing',monto:400000},{cat:'Atención al cliente',monto:150000},{cat:'Limpieza',monto:133000},{cat:'Luz',monto:7826},{cat:'Monotributo',monto:46916}],
+    detalle_var:[{cat:'Varios',monto:230250}],
+    detalle_reinv:[]},
+  Diciembre:{ventas:7591600,devolucion:0,pendientes:0,gastos_fijos:5763159,gastos_var:956967,reinversion:0,gastos_total:6720126,neto:871474,utilidad_pct:11.5,
+    detalle_fijos:[{cat:'Alquiler',monto:1756142},{cat:'ABL/AYSA',monto:102612},{cat:'Siguefit',monto:33900},{cat:'Marketing',monto:400000},{cat:'Atención al cliente',monto:150000},{cat:'Sueldos',monto:3291000},{cat:'Ambulancia',monto:45082},{cat:'Luz',monto:11355},{cat:'Mantenimiento garage',monto:17000},{cat:'Publicidad',monto:144844}],
+    detalle_var:[{cat:'Feria',monto:40000},{cat:'Gráfica',monto:42000},{cat:'Compras',monto:88180},{cat:'Supermercado',monto:15011},{cat:'Habilitación',monto:230000},{cat:'Diseñadora',monto:231000},{cat:'Limpieza',monto:122000},{cat:'Otros',monto:187776}],
+    detalle_reinv:[]},
+  Enero:{ventas:8726037,devolucion:-53000,pendientes:0,gastos_fijos:6188674,gastos_var:713624,reinversion:0,gastos_total:6902298,neto:1770739,utilidad_pct:20.4,
+    detalle_fijos:[{cat:'Alquiler',monto:1756142},{cat:'ABL/AYSA',monto:130419},{cat:'Siguefit',monto:33900},{cat:'Marketing',monto:400000},{cat:'Atención al cliente',monto:150000},{cat:'Sueldos',monto:3401000},{cat:'Ambulancia',monto:18150},{cat:'Luz',monto:163991},{cat:'Slake',monto:71872},{cat:'Monotributos',monto:45701},{cat:'Tuenti',monto:2500},{cat:'Facturitas',monto:14999},{cat:'Publicidad',monto:147490}],
+    detalle_var:[{cat:'Supermercado',monto:50145},{cat:'Garage',monto:13000},{cat:'Transferencias Merli/Manu',monto:279989},{cat:'Limpieza',monto:223000},{cat:'Otros',monto:146990}],
+    detalle_reinv:[]},
+  Febrero:{ventas:10034201,devolucion:-164750,pendientes:0,gastos_fijos:7813849,gastos_var:792623,reinversion:0,gastos_total:8606472,neto:1262979,utilidad_pct:12.8,
+    detalle_fijos:[{cat:'Alquiler',monto:1756142},{cat:'ABL/AYSA',monto:130419},{cat:'Siguefit',monto:42800},{cat:'Marketing',monto:431425},{cat:'Atención al cliente',monto:150000},{cat:'Sueldos',monto:3076000},{cat:'Ambulancia',monto:18150},{cat:'Luz',monto:146451},{cat:'Sueldo Manuel',monto:280500},{cat:'Sueldo Merlina',monto:1700000},{cat:'Slake',monto:29730},{cat:'Monotributos',monto:52232},{cat:'Publicidad',monto:307397}],
+    detalle_var:[{cat:'Ventilador',monto:116799},{cat:'Supermercado',monto:31048},{cat:'Logo H',monto:215000},{cat:'Garage',monto:1000},{cat:'Posnet',monto:400},{cat:'Transferencias Merli',monto:41900},{cat:'Limpieza',monto:77680},{cat:'Otros',monto:308796}],
+    detalle_reinv:[]},
+  Marzo:{ventas:11977360,devolucion:0,pendientes:0,gastos_fijos:9112699,gastos_var:487617,reinversion:4110000,gastos_total:13710316,neto:2377044,utilidad_pct:19.8,
+    detalle_fijos:[{cat:'Alquiler',monto:1904110},{cat:'ABL/AYSA',monto:138134},{cat:'Siguefit',monto:42800},{cat:'Marketing',monto:431425},{cat:'Atención al cliente',monto:250000},{cat:'Sueldo Manuel',monto:500000},{cat:'Sueldos',monto:3903000},{cat:'Ambulancia',monto:18150},{cat:'Luz',monto:110000},{cat:'Sueldo Merlina',monto:1700000},{cat:'Slake',monto:62847},{cat:'Monotributos',monto:52232},{cat:'Publicidad',monto:40000}],
+    detalle_var:[{cat:'Limpieza',monto:190000},{cat:'Supermercado',monto:23917},{cat:'Almohaditas',monto:78500},{cat:'Otros',monto:195200}],
+    detalle_reinv:[{cat:'Camas',monto:2650000},{cat:'Envío',monto:100000},{cat:'Balanza',monto:580000},{cat:'Instalación Aires',monto:300000},{cat:'Mueble',monto:480000}]},
+  Abril:{ventas:13114953,devolucion:-36000,pendientes:0,gastos_fijos:9441878,gastos_var:1055058,reinversion:0,gastos_total:10496936,neto:2582017,utilidad_pct:19.7,
+    detalle_fijos:[{cat:'Alquiler',monto:1904110},{cat:'ABL/AYSA',monto:138134},{cat:'Siguefit',monto:42800},{cat:'Marketing',monto:315000},{cat:'Atención al cliente',monto:417000},{cat:'Sueldo Manuel',monto:637500},{cat:'Sueldos',monto:4097000},{cat:'Ambulancia',monto:30250},{cat:'Luz',monto:76429},{cat:'Sueldo Merlina',monto:1700000},{cat:'Slake',monto:31424},{cat:'Monotributos',monto:52232}],
+    detalle_var:[{cat:'Viaticos',monto:14300},{cat:'Publicidad Meta',monto:417800},{cat:'Publicidad Google',monto:100000},{cat:'Facturitas',monto:14999},{cat:'VEP INPI',monto:70560},{cat:'Café',monto:10340},{cat:'Otros',monto:10000},{cat:'Tasa Seg e Higiene',monto:7059},{cat:'Limpieza',monto:410000}],
+    detalle_reinv:[]},
+  Mayo:{ventas:15243606,devolucion:-19000,pendientes:0,gastos_fijos:10191845,gastos_var:1543430,reinversion:357614,gastos_total:12092889,neto:3489331,utilidad_pct:22.9,
+    detalle_fijos:[{cat:'Alquiler',monto:1904110},{cat:'ABL/AYSA',monto:120690},{cat:'Siguefit',monto:53800},{cat:'Marketing',monto:315000},{cat:'Atención al cliente',monto:700000},{cat:'Sueldo Manuel',monto:800000},{cat:'Sueldos',monto:4159500},{cat:'Luz',monto:38111},{cat:'Sueldo Merlina',monto:2000000},{cat:'Slake',monto:33403},{cat:'Monotributos',monto:52232},{cat:'Facturitas',monto:14999}],
+    detalle_var:[{cat:'Limpieza',monto:304000},{cat:'Regalos',monto:45500},{cat:'Productos Limpieza',monto:7000},{cat:'Supermercado',monto:25523},{cat:'Viaticos',monto:17500},{cat:'Buzos',monto:288000},{cat:'Melita',monto:150000},{cat:'Publicidad Meta',monto:504807},{cat:'Publicidad Google',monto:60000},{cat:'Café',monto:19100},{cat:'Tuenti',monto:2000},{cat:'Camisetas',monto:120000}],
+    detalle_reinv:[{cat:'Estufas',monto:270614},{cat:'Accesorios',monto:87000}]},
+  Junio:{ventas:15568032,devolucion:-110750,pendientes:0,gastos_fijos:12526298,gastos_var:1347847,reinversion:2117204,gastos_total:15991349,neto:1583137,utilidad_pct:10.2,
+    detalle_fijos:[{cat:'Alquiler 1',monto:1448200},{cat:'Alquiler 2',monto:629600},{cat:'ABL/AYSA',monto:120690},{cat:'Siguefit',monto:53800},{cat:'Marketing',monto:315000},{cat:'Atención al cliente',monto:840000},{cat:'Sueldo Manuel',monto:800000},{cat:'Sueldos',monto:4343000},{cat:'Luz',monto:100208},{cat:'Sueldo Merlina',monto:2000000},{cat:'Slake',monto:33403},{cat:'Monotributos',monto:52232},{cat:'Facturitas',monto:27498},{cat:'Aguinaldos',monto:1762667}],
+    detalle_var:[{cat:'Limpieza',monto:581200},{cat:'Publicidad Meta',monto:489335},{cat:'Otros',monto:11200},{cat:'Telecom Mayo',monto:36524},{cat:'Seguro Mayo',monto:19610},{cat:'Telecom Junio',monto:37800},{cat:'Seguro Junio',monto:19610},{cat:'Supermercado',monto:15568},{cat:'Mantenimiento camas',monto:137000}],
+    detalle_reinv:[{cat:'Almohadones',monto:22609},{cat:'Banqueta',monto:68000},{cat:'Pisos de goma',monto:72590},{cat:'Sodimac Pintura',monto:18297},{cat:'Rieles cortina',monto:35000},{cat:'Picaportes puertas',monto:17950},{cat:'Envío',monto:20000},{cat:'Deco Argentina',monto:5200},{cat:'Puerta Corrediza',monto:69600},{cat:'Ferretería',monto:18000},{cat:'Rawa',monto:235961},{cat:'Cámara de seguridad',monto:71198},{cat:'Alfombra consultorio',monto:28799},{cat:'Refacción',monto:1345000},{cat:'Antideslizantes',monto:50000},{cat:'Cortinas',monto:39000}]}
+};!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilates Studio · Gestión</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --surface2: #f0eeea;
+  --border: #e2ded8;
+  --text: #1a1917;
+  --text2: #6b6760;
+  --text3: #a09c97;
+  --accent: #2d2a26;
+  --purple: #534AB7;
+  --purple-light: #EEEDFE;
+  --purple-text: #3C3489;
+  --teal: #0F6E56;
+  --teal-light: #E1F5EE;
+  --teal-text: #085041;
+  --danger: #993C1D;
+  --danger-light: #FAECE7;
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; min-height: 100vh; }
+.app { display: flex; min-height: 100vh; }
+.sidebar { width: 220px; background: var(--accent); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; bottom: 0; z-index: 10; }
+.sidebar-logo { padding: 28px 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.brand { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; color: rgba(255,255,255,0.9); text-transform: uppercase; }
+.sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 3px; }
+
+/* Local switcher */
+.local-switch { margin: 14px 12px 4px; display: flex; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid rgba(255,255,255,0.15); }
+.local-btn { flex: 1; padding: 7px 4px; font-size: 12px; font-family: 'DM Sans',sans-serif; cursor: pointer; background: transparent; color: rgba(255,255,255,0.5); border: none; transition: all 0.15s; text-align: center; }
+.local-btn:first-child { border-right: 1px solid rgba(255,255,255,0.15); }
+.local-btn.active { background: rgba(255,255,255,0.15); color: #fff; font-weight: 500; }
+
+.sidebar-nav { flex: 1; padding: 8px 12px; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: var(--radius-sm); cursor: pointer; color: rgba(255,255,255,0.5); font-size: 13px; transition: all 0.15s; margin-bottom: 2px; border: none; background: transparent; width: 100%; text-align: left; }
+.nav-item:hover { color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.06); }
+.nav-item.active { color: #fff; background: rgba(255,255,255,0.12); }
+.nav-item svg { flex-shrink: 0; opacity: 0.7; }
+.nav-item.active svg { opacity: 1; }
+.nav-section { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.25); padding: 10px 12px 4px; }
+.sidebar-footer { padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: rgba(255,255,255,0.25); }
+
+.main { margin-left: 220px; flex: 1; }
+.topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 5; }
+.topbar-title { font-size: 15px; font-weight: 500; }
+.topbar-meta { font-size: 12px; color: var(--text3); }
+.content { padding: 28px 32px; }
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+.metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.metric { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
+.metric-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+.metric-value { font-size: 21px; font-weight: 500; color: var(--text); font-family: 'DM Mono', monospace; }
+.metric-sub { font-size: 11px; color: var(--text2); margin-top: 4px; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 16px; }
+.card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.card-title { font-size: 13px; font-weight: 500; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--text3); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+td { padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text); }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--bg); }
+.td-right { text-align: right; font-family: 'DM Mono', monospace; font-size: 12px; }
+.td-muted { color: var(--text2); }
+.td-danger { color: var(--danger); font-family: 'DM Mono', monospace; font-size: 12px; text-align: right; }
+.td-success { color: var(--teal); font-family: 'DM Mono', monospace; font-size: 12px; text-align: right; }
+.tr-total td { font-weight: 500; background: var(--bg); border-top: 1px solid var(--border); }
+.tr-section td { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text3); background: var(--surface2); padding: 6px 10px; border-bottom: 1px solid var(--border); }
+
+.month-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.month-tab { padding: 5px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border); font-size: 12px; cursor: pointer; color: var(--text2); background: transparent; font-family: 'DM Sans', sans-serif; transition: all 0.15s; }
+.month-tab:hover { background: var(--surface2); }
+.month-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.pill { display: inline-flex; align-items: center; font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+.pill-purple { background: var(--purple-light); color: var(--purple-text); }
+.pill-teal { background: var(--teal-light); color: var(--teal-text); }
+
+.occ-track { flex: 1; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.occ-fill { height: 100%; border-radius: 3px; background: var(--accent); transition: width 0.5s ease; }
+
+.tramo-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 12px; }
+.tramo-lbl { min-width: 72px; color: var(--text2); }
+.tramo-track { flex: 1; height: 5px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.tramo-fill-bar { height: 100%; border-radius: 3px; background: #c5c2e8; }
+.tramo-fill-bar.active { background: var(--purple); }
+.tramo-pct { min-width: 36px; text-align: right; font-family: 'DM Mono', monospace; color: var(--text2); font-size: 12px; }
+.tramo-pct.active { color: var(--purple-text); font-weight: 500; }
+.tramo-row.active-row .tramo-lbl { color: var(--text); font-weight: 500; }
+
+.neto-table td:first-child { color: var(--text2); }
+.neto-table .total-row td { font-weight: 500; padding-top: 12px; border-top: 1px solid var(--border); border-bottom: none; }
+
+.upload-zone { border: 1.5px dashed var(--border); border-radius: var(--radius); padding: 36px; text-align: center; cursor: pointer; transition: all 0.15s; }
+.upload-zone:hover { border-color: var(--accent); background: var(--surface2); }
+
+.form-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.form-row:last-child { border-bottom: none; }
+.form-label { font-size: 13px; }
+.form-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+input[type=number], input[type=text], select { font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--text); outline: none; transition: border 0.15s; }
+input:focus, select:focus { border-color: var(--accent); }
+input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', monospace; }
+
+.btn { font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 8px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; transition: all 0.15s; }
+.btn:hover { background: var(--surface2); }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { background: #3d3a35; }
+
+.status-msg { display: none; padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; margin-top: 12px; }
+.status-ok { background: var(--teal-light); color: var(--teal-text); }
+.status-err { background: var(--danger-light); color: var(--danger); }
+
+.comp-var-up { color: var(--teal); font-family: 'DM Mono', monospace; font-size: 12px; }
+.comp-var-down { color: var(--danger); font-family: 'DM Mono', monospace; font-size: 12px; }
+
+/* P&L bar chart inline */
+.pnl-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; font-size: 12px; }
+.pnl-bar-label { min-width: 140px; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pnl-bar-track { flex: 1; height: 7px; background: var(--surface2); border-radius: 4px; overflow: hidden; }
+.pnl-bar-fill { height: 100%; border-radius: 4px; }
+.pnl-bar-val { min-width: 80px; text-align: right; font-family: 'DM Mono', monospace; color: var(--text); }
+
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); }
+.login-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 36px; width: 360px; }
+.login-brand { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; color: var(--text3); text-transform: uppercase; margin-bottom: 28px; }
+.login-title { font-size: 20px; font-weight: 500; margin-bottom: 6px; }
+.login-sub { font-size: 13px; color: var(--text2); margin-bottom: 28px; }
+.login-field { margin-bottom: 14px; }
+.login-field label { display: block; font-size: 12px; color: var(--text2); margin-bottom: 5px; }
+.login-field input { width: 100%; }
+.login-btn { width: 100%; padding: 10px; border-radius: var(--radius-sm); border: none; background: var(--accent); color: #fff; font-size: 14px; font-family: 'DM Sans', sans-serif; cursor: pointer; margin-top: 6px; transition: background 0.15s; }
+.login-btn:hover { background: #3d3a35; }
+.login-error { font-size: 12px; color: var(--danger); margin-top: 10px; display: none; }
+</style>
+</head>
+<body>
+
+<div id="login-wrap" class="login-wrap">
+  <div class="login-card">
+    <div class="login-brand">Pilates Studio</div>
+    <div class="login-title">Bienvenida</div>
+    <div class="login-sub">Ingresá con tu usuario para continuar</div>
+    <div class="login-field">
+      <label>Usuario</label>
+      <input type="text" id="login-user" placeholder="ej: julia" autocomplete="username" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <div class="login-field">
+      <label>Contraseña</label>
+      <input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="login-btn" onclick="doLogin()">Ingresar</button>
+    <div class="login-error" id="login-error">Usuario o contraseña incorrectos</div>
+  </div>
+</div>
+
+<div class="app" id="app" style="display:none">
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="brand">Pilates Studio</div>
+      <div class="sub">Gestión de locales</div>
+    </div>
+
+    <div class="local-switch">
+      <button class="local-btn active" id="btn-florida" onclick="setLocal('florida')">Florida</button>
+      <button class="local-btn" id="btn-urquiza" onclick="setLocal('urquiza')">Urquiza</button>
+    </div>
+
+    <nav class="sidebar-nav" id="nav-urquiza">
+      <div class="nav-section">Franquicia</div>
+      <button class="nav-item active" onclick="showScreen('dashboard')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </button>
+      <button class="nav-item" onclick="showScreen('comparativa')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Comparativa
+      </button>
+      <button class="nav-item" onclick="showScreen('importar')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Importar Excel
+      </button>
+      <button class="nav-item" onclick="showScreen('abonos')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Abonos
+      </button>
+      <button class="nav-item" onclick="showScreen('config')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Configuración
+      </button>
+    </nav>
+
+    <nav class="sidebar-nav" id="nav-florida" style="display:none">
+      <div class="nav-section">Local propio</div>
+      <button class="nav-item active" onclick="showScreenFlorida('fl-dashboard')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </button>
+      <button class="nav-item" onclick="showScreenFlorida('fl-pnl')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        P&amp;L detallado
+      </button>
+      <button class="nav-item" onclick="showScreenFlorida('fl-gastos')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Egresos por categoría
+      </button>
+      <button class="nav-item" onclick="showScreenFlorida('fl-retiros')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        Retiros
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">v1.0 · 2026</div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <span class="topbar-title" id="topbar-title">Dashboard</span>
+      <span class="topbar-meta" id="topbar-meta" style="display:flex;align-items:center;gap:16px"><span id="topbar-user" style="color:var(--text2);font-size:12px"></span>Donado · Villa Ortúzar</span><button onclick="doLogout()" style="font-size:12px;padding:4px 12px;border-radius:var(--radius-sm);border:1px solid var(--border);background:transparent;cursor:pointer;color:var(--text2);font-family:'DM Sans',sans-serif">Salir</button></span>
+    </div>
+    <div class="content">
+
+      <!-- ═══════════ URQUIZA: DASHBOARD ═══════════ -->
+      <div id="screen-dashboard" class="screen active">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:18px;font-weight:500">Donado · Villa Ortúzar</span>
+            <span class="pill pill-purple" id="dash-tramo-pill">—</span>
+          </div>
+          <div class="month-tabs">
+            <button class="month-tab active" onclick="setMes('abril')">Abril 2026</button>
+            <button class="month-tab" onclick="setMes('mayo')">Mayo 2026</button>
+          </div>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric"><div class="metric-label">Facturación bruta</div><div class="metric-value" id="m-fact">—</div><div class="metric-sub" id="m-fact-sub">—</div></div>
+          <div class="metric"><div class="metric-label">Comisión de marca</div><div class="metric-value" id="m-com">—</div><div class="metric-sub" id="m-alic">—</div></div>
+          <div class="metric"><div class="metric-label">Ocupación</div><div class="metric-value" id="m-occ">—</div><div class="metric-sub" id="m-cupos">—</div></div>
+          <div class="metric"><div class="metric-label">Clientes activos</div><div class="metric-value" id="m-cli">—</div><div class="metric-sub">Sin bonificados</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Ocupación del local</span>
+                <span id="dash-occ-pct" style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500">—</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+                <div class="occ-track" style="height:8px"><div class="occ-fill" id="occ-bar" style="width:0%"></div></div>
+              </div>
+              <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:var(--text3);margin-bottom:8px">Escala · Cláusula 8</div>
+              <div id="tramos-vis"></div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-header"><span class="card-title">Top abonos por facturación</span></div>
+              <table><thead><tr><th>Tipo</th><th class="td-right">Clientes</th><th class="td-right">Total</th><th class="td-right">%</th></tr></thead><tbody id="top-abonos"></tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="max-width:560px">
+          <div class="card-header"><span class="card-title">Ingreso neto estimado del franquiciado</span></div>
+          <table class="neto-table">
+            <tr><td>Facturación bruta</td><td class="td-right" id="neto-fact">—</td></tr>
+            <tr><td>Comisión de marca</td><td class="td-danger" id="neto-com">—</td></tr>
+            <tr><td>Costo profesoras (est.)</td><td class="td-danger" id="neto-prof">—</td></tr>
+            <tr class="total-row"><td>Ingreso neto estimado</td><td class="td-right" id="neto-total">—</td></tr>
+          </table>
+          <p style="font-size:11px;color:var(--text3);margin-top:12px">Configurá el valor hora en Configuración.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════ URQUIZA: COMPARATIVA ═══════════ -->
+      <div id="screen-comparativa" class="screen">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Abril vs Mayo 2026 · Donado</span></div>
+          <table><thead><tr><th>Concepto</th><th class="td-right">Abril</th><th class="td-right">Mayo</th><th class="td-right">Variación</th></tr></thead><tbody id="comp-tbody"></tbody></table>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Evolución mensual</span></div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;font-size:12px;color:var(--text2)">
+            <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#2d2a26;display:inline-block"></span>Facturación</span>
+            <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#534AB7;display:inline-block"></span>Comisión</span>
+          </div>
+          <div style="position:relative;height:220px"><canvas id="evol-chart" role="img" aria-label="Evolución Donado">.</canvas></div>
+        </div>
+      </div>
+
+      <!-- ═══════════ URQUIZA: IMPORTAR ═══════════ -->
+      <div id="screen-importar" class="screen">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Importar Excel del sistema</span></div>
+          <div class="upload-zone" onclick="document.getElementById('fileInput').click()">
+            <input type="file" id="fileInput" accept=".xlsx,.xls" style="display:none" onchange="handleFile(event)">
+            <div style="font-size:32px;margin-bottom:8px">📊</div>
+            <div style="font-size:14px;color:var(--text2)">Arrastrá o hacé click para subir el Excel</div>
+            <div style="font-size:12px;color:var(--text3);margin-top:4px">Columnas: Cliente · Categoría de Pago · Mes · Año · Importe · Cupo mensual</div>
+          </div>
+          <div id="import-status" class="status-msg"></div>
+        </div>
+        <div class="card">
+          <div class="form-row">
+            <div><div class="form-label">Local</div></div>
+            <select id="imp-local"><option>Donado (Villa Ortúzar)</option><option>Florida (Vicente López)</option></select>
+          </div>
+          <div class="form-row">
+            <div><div class="form-label">Cupos ofrecidos</div><div class="form-sub">Total por semana modelo</div></div>
+            <input type="number" id="imp-cupos" value="532">
+          </div>
+          <div style="margin-top:16px"><button class="btn btn-primary" onclick="simularImport()">Recalcular con datos actuales</button></div>
+        </div>
+        <div id="import-preview" style="display:none" class="card">
+          <div class="card-header"><span class="card-title">Resultado</span></div>
+          <div id="import-preview-content"></div>
+        </div>
+      </div>
+
+      <!-- ═══════════ URQUIZA: ABONOS ═══════════ -->
+      <div id="screen-abonos" class="screen">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
+          <span style="font-size:16px;font-weight:500">Detalle de abonos · Donado</span>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <div class="month-tabs">
+              <button class="month-tab active" onclick="setMesAbonos('abril')">Abril 2026</button>
+              <button class="month-tab" onclick="setMesAbonos('mayo')">Mayo 2026</button>
+            </div>
+            <select onchange="filtrarAbonos(this.value)" style="font-size:12px">
+              <option value="">Todos</option><option>Clase suelta</option><option>1 vez por semana</option><option>2 veces por semana</option><option>3 veces por semana</option><option>BONIFICADO</option>
+            </select>
+          </div>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table><thead><tr><th style="padding:12px 16px">Cliente</th><th style="padding:12px 10px">Tipo</th><th class="td-right" style="padding:12px 16px 12px 10px">Importe</th><th class="td-right" style="padding:12px 16px 12px 10px">Cupos</th></tr></thead><tbody id="abonos-body"></tbody></table>
+        </div>
+      </div>
+
+      <!-- ═══════════ URQUIZA: CONFIG ═══════════ -->
+      <div id="screen-config" class="screen">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <div class="card">
+              <div class="card-header"><span class="card-title">Datos de referencia</span></div>
+              <div class="form-row"><div><div class="form-label">Valor hora profesora ($)</div><div class="form-sub">Para calcular ingreso neto del franquiciado</div></div><input type="number" id="cfg-hora" value="0" onchange="saveConfig()"></div>
+              <div class="form-row"><div><div class="form-label">Horas de clase por mes</div></div><input type="number" id="cfg-horas" value="80" onchange="saveConfig()"></div>
+            </div>
+            <div class="card">
+              <div class="card-header"><span class="card-title">Locales</span></div>
+              <div class="form-row"><div><div class="form-label">Donado</div><div class="form-sub">Villa Ortúzar · Franquicia</div></div><span class="pill pill-purple">Franquicia</span></div>
+              <div class="form-row"><div><div class="form-label">Florida</div><div class="form-sub">Vicente López · Local propio</div></div><span class="pill pill-teal">Propio</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-header"><span class="card-title">Grilla de comisiones · Cláusula 8</span></div>
+              <table><thead><tr><th>% Ocupación</th><th class="td-right">Comisión</th></tr></thead><tbody id="grilla-tbody"></tbody></table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLORIDA: DASHBOARD ═══════════ -->
+      <div id="screen-fl-dashboard" class="screen">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+          <span style="font-size:18px;font-weight:500">Florida · Vicente López</span>
+          <div class="month-tabs" id="fl-month-tabs">
+            <button class="month-tab active" onclick="setMesFlorida('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesFlorida('Diciembre')">Dic</button>
+            <button class="month-tab" onclick="setMesFlorida('Enero')">Ene</button>
+            <button class="month-tab" onclick="setMesFlorida('Febrero')">Feb</button>
+            <button class="month-tab" onclick="setMesFlorida('Marzo')">Mar</button>
+            <button class="month-tab" onclick="setMesFlorida('Abril')">Abr</button>
+            <button class="month-tab" onclick="setMesFlorida('Mayo')">May</button>
+            <button class="month-tab" onclick="setMesFlorida('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesFlorida('Julio')">Jul</button>
+            <button class="month-tab" onclick="setMesFlorida('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
+          </div>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric"><div class="metric-label">Ventas netas</div><div class="metric-value" id="fl-ventas">—</div><div class="metric-sub" id="fl-mes-label">—</div></div>
+          <div class="metric"><div class="metric-label">Gastos totales</div><div class="metric-value" id="fl-gastos">—</div><div class="metric-sub">Fijos + variables</div></div>
+          <div class="metric"><div class="metric-label">Gastos fijos</div><div class="metric-value" id="fl-fijos">—</div><div class="metric-sub" id="fl-fijos-pct">—</div></div>
+          <div class="metric"><div class="metric-label">Resultado neto</div><div class="metric-value" id="fl-neto">—</div><div class="metric-sub" id="fl-margen">—</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Evolución mensual · Florida</span></div>
+          <div style="display:flex;gap:16px;margin-bottom:12px;font-size:12px;color:var(--text2)">
+            <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#2d2a26;display:inline-block"></span>Ventas netas</span>
+            <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#E24B4A;display:inline-block"></span>Gastos totales</span>
+            <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75;display:inline-block"></span>Resultado neto</span>
+          </div>
+          <div style="position:relative;height:240px"><canvas id="fl-evol-chart" role="img" aria-label="Evolución Florida">.</canvas></div>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLORIDA: P&L ═══════════ -->
+      <div id="screen-fl-pnl" class="screen">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+          <span style="font-size:18px;font-weight:500">P&amp;L detallado · Florida</span>
+          <div class="month-tabs">
+            <button class="month-tab active" onclick="setMesPnl('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesPnl('Diciembre')">Dic</button>
+            <button class="month-tab" onclick="setMesPnl('Enero')">Ene</button>
+            <button class="month-tab" onclick="setMesPnl('Febrero')">Feb</button>
+            <button class="month-tab" onclick="setMesPnl('Marzo')">Mar</button>
+            <button class="month-tab" onclick="setMesPnl('Abril')">Abr</button>
+            <button class="month-tab" onclick="setMesPnl('Mayo')">May</button>
+            <button class="month-tab" onclick="setMesPnl('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesPnl('Julio')">Jul</button>
+            <button class="month-tab" onclick="setMesPnl('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
+          </div>
+        </div>
+        <div class="card" style="max-width:600px">
+          <table id="pnl-table">
+            <thead><tr><th>Concepto</th><th class="td-right">Importe</th></tr></thead>
+            <tbody id="pnl-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLORIDA: GASTOS POR CATEGORÍA ═══════════ -->
+      <div id="screen-fl-gastos" class="screen">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+          <span style="font-size:18px;font-weight:500">Egresos por categoría · Florida</span>
+          <div class="month-tabs">
+            <button class="month-tab active" onclick="setMesGastos('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesGastos('Diciembre')">Dic</button>
+            <button class="month-tab" onclick="setMesGastos('Enero')">Ene</button>
+            <button class="month-tab" onclick="setMesGastos('Febrero')">Feb</button>
+            <button class="month-tab" onclick="setMesGastos('Marzo')">Mar</button>
+            <button class="month-tab" onclick="setMesGastos('Abril')">Abr</button>
+            <button class="month-tab" onclick="setMesGastos('Mayo')">May</button>
+            <button class="month-tab" onclick="setMesGastos('Junio')">Jun</button>
+            <button class="month-tab" onclick="setMesGastos('Julio')">Jul</button>
+            <button class="month-tab" onclick="setMesGastos('total')" style="border-color:#534AB7;color:#3C3489">Acumulado</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title" id="gastos-titulo">—</span><span id="gastos-total" style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500">—</span></div>
+          <div id="gastos-bars"></div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════ FLORIDA: RETIROS ═══════════ -->
+      <div id="screen-fl-retiros" class="screen">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+          <span style="font-size:18px;font-weight:500">Retiros · Florida</span>
+        </div>
+
+        <!-- Inversión inicial -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:0">
+          <div class="card">
+            <div class="card-header"><span class="card-title">Inversión inicial por socio</span></div>
+            <table>
+              <thead><tr><th>Socio</th><th class="td-right">Inversión (USD)</th><th class="td-right">Participación</th></tr></thead>
+              <tbody>
+                <tr><td>Manuel</td><td class="td-right">u 6.264,03</td><td class="td-right">37,4%</td></tr>
+                <tr><td>Merlina</td><td class="td-right">u 2.870,54</td><td class="td-right">17,1%</td></tr>
+                <tr><td>Juan Cruz</td><td class="td-right">u 7.616,83</td><td class="td-right">45,5%</td></tr>
+                <tr class="tr-total"><td>Total</td><td class="td-right">u 16.751,40</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="card-header"><span class="card-title">Recupero de inversión</span><span style="font-size:11px;color:var(--text3)">retiros acumulados / inversión</span></div>
+            <div id="recupero-bars"></div>
+          </div>
+        </div>
+
+        <!-- Tabla de retiros -->
+        <div class="card" style="margin-top:16px">
+          <div class="card-header">
+            <span class="card-title">Historial de retiros</span>
+            <span style="font-family:'DM Mono',monospace;font-size:13px;font-weight:500" id="retiros-total">—</span>
+          </div>
+          <table>
+            <thead><tr><th>Fecha</th><th>TC</th><th class="td-right">Total ARS</th><th class="td-right">Total USD</th><th class="td-right">Manuel</th><th class="td-right">Merlina</th><th class="td-right">Juan Cruz</th></tr></thead>
+            <tbody id="retiros-body"></tbody>
+          </table>
+        </div>
+
+        <!-- Acumulado por socio -->
+        <div class="card">
+          <div class="card-header"><span class="card-title">Acumulado por socio</span></div>
+          <table>
+            <thead><tr><th>Socio</th><th class="td-right">Retirado (ARS)</th><th class="td-right">Retirado (USD)</th><th class="td-right">Inversión (USD)</th><th class="td-right">% recupero</th></tr></thead>
+            <tbody id="retiros-acum"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Tramos ────────────────────────────────────────────────────────────────
+const TRAMOS = [
+  {min:0,max:0.50,pct:6,label:'0–50%'},
+  {min:0.50,max:0.55,pct:7,label:'50–55%'},
+  {min:0.55,max:0.60,pct:8,label:'55–60%'},
+  {min:0.60,max:0.65,pct:9,label:'60–65%'},
+  {min:0.65,max:0.70,pct:10,label:'65–70%'},
+  {min:0.70,max:0.75,pct:11,label:'70–75%'},
+  {min:0.75,max:0.80,pct:12,label:'75–80%'},
+  {min:0.80,max:0.85,pct:13,label:'80–85%'},
+  {min:0.85,max:0.90,pct:14,label:'85–90%'},
+  {min:0.90,max:1.01,pct:15,label:'90–100%'}
+];
+function getTramo(occ){for(const t of TRAMOS)if(occ>=t.min&&occ<t.max)return t;return TRAMOS[TRAMOS.length-1];}
+function calcStats(mes){
+  const d=DONADO[mes];
+  const activos=d.rows.filter(r=>r.tipo!=='BONIFICADO');
+  const fact=activos.reduce((s,r)=>s+r.importe,0);
+  const cuposV=activos.reduce((s,r)=>s+r.cupo,0);
+  const occ=cuposV/d.cuposOfrecidos;
+  const tramo=getTramo(occ);
+  const comision=Math.round(fact*tramo.pct/100);
+  const clientes=activos.filter(r=>r.importe>0).length;
+  return{fact,cuposV,cuposO:d.cuposOfrecidos,occ,tramo,comision,clientes};
+}
+function fmt(n){return '$'+Math.round(n).toLocaleString('es-AR');}
+function fmtPct(n){return(n*100).toFixed(1)+'%';}
+
+// ─── Datos Donado ─────────────────────────────────────────────────────────
+const DONADO = {
+  abril:{cuposOfrecidos:532,rows:[{cliente:'Margarita Israel Gurman',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Florencia Piricninsky',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Shantal Gotlib',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Brenda Becher',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Mariana Vacas',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Guillermo Caram',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Rosana Roggero',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Soledad González Carvajal',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Silvia Miranda',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Cora Marco',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Eliana Romina Zurman',tipo:'2 veces por semana FLEXIBLE',importe:18000,cupo:2},{cliente:'Cecilia Londero',tipo:'2 veces por semana',importe:34000,cupo:2},{cliente:'Cynthia Gabriela Vietto',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Tatiana Ant',tipo:'1 vez por semana FLEXIBLE',importe:26100,cupo:1},{cliente:'Luz Cavia',tipo:'2 veces por semana',importe:34000,cupo:2},{cliente:'Maria Eugenia Teran',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Cynthia Delonc',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Bárbara Ferraro',tipo:'1 vez por semana',importe:24650,cupo:1},{cliente:'Natalia Lassi',tipo:'3 veces por semana',importe:22375,cupo:3},{cliente:'Javiera Grau',tipo:'2 veces por semana',importe:34000,cupo:2},{cliente:'Gabriela Triay',tipo:'2 veces por semana FLEXIBLE',importe:36000,cupo:2},{cliente:'Luiza Ferreira',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Candela Caram',tipo:'2 veces por semana',importe:34000,cupo:2},{cliente:'Natalia Lassi',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Noel Sorensen',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Lourdes Aguete',tipo:'3 veces por semana',importe:47000,cupo:3},{cliente:'Carolina Pinchuk',tipo:'2 veces por semana',importe:24500,cupo:2},{cliente:'Alejandro Canale',tipo:'1 vez por semana',importe:19000,cupo:1},{cliente:'Nicole Souto',tipo:'1 vez por semana',importe:19000,cupo:1},{cliente:'Evgenia Kovaeva',tipo:'1 vez por semana',importe:19000,cupo:1},{cliente:'Diana Bekasova',tipo:'2 veces por semana',importe:24500,cupo:2},{cliente:'Marta Gonzalez Muguruza',tipo:'1 vez por semana',importe:24650,cupo:1},{cliente:'Francisca Fábregas',tipo:'1 vez por semana',importe:24650,cupo:1},{cliente:'Felipe Fábregas',tipo:'1 vez por semana',importe:24650,cupo:1},{cliente:'Victoria Lagos',tipo:'1 vez por semana',importe:36900,cupo:1},{cliente:'Marcela Pagano',tipo:'2 veces por semana',importe:51000,cupo:2},{cliente:'Macarena Berraondo',tipo:'2 veces por semana',importe:51000,cupo:2},{cliente:'Julieta Raimondi',tipo:'2 veces por semana',importe:51000,cupo:2},{cliente:'Andrea Pietanezi',tipo:'2 veces por semana',importe:51000,cupo:2},{cliente:'Natalia Graizman',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Lara Tamburi',tipo:'1 vez por semana',importe:24650,cupo:1},{cliente:'Mariana Vacas',tipo:'2 veces por semana',importe:42500,cupo:2},{cliente:'Mariela Donato',tipo:'2 veces por semana',importe:51000,cupo:2},{cliente:'Rocio Rodriguez',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Rosa Zupanovic',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Sonia Soria',tipo:'2 veces por semana',importe:24500,cupo:2},{cliente:'Agostina Cingolani',tipo:'2 veces por semana',importe:50000,cupo:2},{cliente:'Roxana Andrea Dicono',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Laura Tubet',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Avril Tosonotti',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Andrea Fabiana Martini',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Martin Denis',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Julieta Boyán',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Sofia Iglesias',tipo:'1 vez por semana',importe:40000,cupo:1},{cliente:'Gustavo Boyán',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Alejandra Cervirizzo',tipo:'2 veces por semana',importe:18700,cupo:2},{cliente:'Andrés Sirotzky',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'María Laura Marcos',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Virginia Komesu',tipo:'2 veces por semana FLEXIBLE',importe:54000,cupo:2},{cliente:'Maria Belen Rey',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'María Eduarda Soares',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Diego Pérez',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Dolores Cabrera',tipo:'3 veces por semana',importe:80750,cupo:3},{cliente:'Cynthia Mendez',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Victoria Traverso',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Abril Corvalan',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Marcela Naszewski',tipo:'1 vez por semana',importe:31300,cupo:1},{cliente:'Milagro Garcia Lizarraga',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Marta Cuesta',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Erica Zurman',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'María Fernanda Latasa',tipo:'2 veces por semana',importe:62000,cupo:2},{cliente:'Susana Golpe',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Pilar Salinas',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Juan Iturbe',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Luciana Maria Baeza',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Felicitas Baeza',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Sofía Consani',tipo:'3 veces por semana',importe:80750,cupo:3},{cliente:'Constanza Perez Arena',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'María Valentina Díaz',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Sofía Turazzini',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Victoria Gonzalez Nogueira',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Lucía Ribeiro',tipo:'2 veces por semana FLEXIBLE',importe:80000,cupo:2},{cliente:'Valentina Azul Tomalino',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Florencia Huarte',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Irma Laviero',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Agustina Cristiani',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Karen Mendez',tipo:'2 veces por semana FLEXIBLE',importe:86000,cupo:2},{cliente:'Yanett Peñalva',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Maria Emilia Torre',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Marcelo Molina',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Jorgelina Faure',tipo:'3 veces por semana',importe:80750,cupo:3},{cliente:'Mercedes Olguín Uribe',tipo:'2 veces por semana',importe:48000,cupo:2},{cliente:'Mauricio Castro',tipo:'2 veces por semana FLEXIBLE',importe:68000,cupo:2},{cliente:'María José Grillo',tipo:'2 veces por semana FLEXIBLE',importe:68000,cupo:2},{cliente:'Tali Slipak',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Irene Scherz',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Malena Sofia',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Valeria Vallejos',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Rosa Usik',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Lucila Fanelli',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Pilar Perachino',tipo:'1 vez por semana FLEXIBLE',importe:34200,cupo:1},{cliente:'Valentina Cerrutti',tipo:'3 veces por semana',importe:80750,cupo:3},{cliente:'Maria Laura Dicono',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Alejandra Cervirizzo',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Karen Vera',tipo:'3 veces por semana',importe:62750,cupo:3},{cliente:'Joselyn Mundarain',tipo:'3 veces por semana',importe:80750,cupo:3},{cliente:'Maria Paula Franke',tipo:'1 vez por semana',importe:40000,cupo:1},{cliente:'Oriana Lopez Suk',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Sol Wierzbinsky',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Cecilia Mermoz',tipo:'2 veces por semana FLEXIBLE',importe:68000,cupo:2},{cliente:'Ingrid Munin',tipo:'6 veces por semana FLEXIBLE',importe:155000,cupo:6},{cliente:'Jimena Gomez',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Sofia Onorati',tipo:'1 vez por semana',importe:49300,cupo:1},{cliente:'Agustina Prima',tipo:'2 veces por semana',importe:50000,cupo:2},{cliente:'Leandro Belluscio',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Silvia Oneto',tipo:'5 veces por semana',importe:120000,cupo:5},{cliente:'Mariana Zabaleta',tipo:'2 veces por semana',importe:68000,cupo:2},{cliente:'Carolina Nadersohn',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Maria Paula Di Lello',tipo:'1 vez por semana',importe:40000,cupo:1},{cliente:'Carla Ponce',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Fernanda Navas Navas',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Verónica Veliz',tipo:'3 veces por semana',importe:95000,cupo:3},{cliente:'Vanina Basanta',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Abril Torregrosa',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Sol Ferrari',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Josefina Golisano',tipo:'2 veces por semana',importe:80000,cupo:2}]},
+  mayo:{cuposOfrecidos:532,rows:[{cliente:'Julia Ciccolella',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Melisa Contreras',tipo:'Clase suelta',importe:0,cupo:0.25},{cliente:'Melanie Tremoceiro',tipo:'1 vez por semana FLEXIBLE',importe:0,cupo:1},{cliente:'Maria Carolina Crespo',tipo:'1 vez por semana FLEXIBLE',importe:29000,cupo:1},{cliente:'Melanie Tremoceiro',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Julieta Tkach',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Carolina Flechas',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Victoria Pennesi',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'María Olano',tipo:'1 vez por semana FLEXIBLE',importe:17600,cupo:1},{cliente:'Tomas Szarfer',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Eliana Castellano',tipo:'1 vez por semana',importe:26100,cupo:1},{cliente:'Lucia Hollmann',tipo:'2 veces por semana',importe:45000,cupo:2},{cliente:'Carol Czerwacki',tipo:'2 veces por semana',importe:36000,cupo:2},{cliente:'Ana Villegas',tipo:'2 veces por semana',importe:22000,cupo:2},{cliente:'María Olano',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Tessy Barbat',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Natasha Arcuschin',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Lisa Zaied',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Daniela Zaied',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Jimena Troncoso',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Tomas Szarfer',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Margarita Israel Gurman',tipo:'1 vez por semana',importe:40000,cupo:1},{cliente:'Macarena Reyes',tipo:'2 veces por semana',importe:27000,cupo:2},{cliente:'Lujan Reyes',tipo:'2 veces por semana',importe:27000,cupo:2},{cliente:'Nicole Souto',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Josefina del buono',tipo:'1 vez por semana',importe:25500,cupo:1},{cliente:'Agustina Prima',tipo:'2 veces por semana FLEXIBLE',importe:36000,cupo:2},{cliente:'Macarena Ezcurra',tipo:'2 veces por semana',importe:36000,cupo:2},{cliente:'Matias Di Blasi',tipo:'2 veces por semana',importe:36000,cupo:2},{cliente:'Maria Fernanda Torres',tipo:'2 veces por semana',importe:36000,cupo:2},{cliente:'Gabriela Triay',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Azul Alonso',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Rosa Zupanovic',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Oriana Zaifrani',tipo:'1 vez por semana',importe:34200,cupo:1},{cliente:'Candela Caram',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Monica Roberts',tipo:'1 vez por semana',importe:52000,cupo:1},{cliente:'Luz Cavia',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Josefina del buono',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Gabriela Inés Piñeiro',tipo:'2 veces por semana',importe:54000,cupo:2},{cliente:'Pilar Perachino',tipo:'1 vez por semana FLEXIBLE',importe:58000,cupo:1},{cliente:'Candela Ferrando',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Virginia Rubacha',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Pilar Salinas',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Felicitas Baeza',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Maria Eugenia Teran',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Luciana Maria Baeza',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Alina Tkaczuk',tipo:'2 veces por semana',importe:22000,cupo:2},{cliente:'Rocio Rodriguez',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Veronica Camaño',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Victoria Gonzalez Nogueira',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Gabriela Rubacha',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Milagro Garcia Lizarraga',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Paula Larrañaga',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Lola Urteaga',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Julieta Boyán',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Gustavo Boyán',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Laura Tubet',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Constanza Osácar',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'María Fernanda Latasa',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Irma Laviero',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Karen Vera',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Oriana Zaifrani',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Alina Tkaczuk',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Paula Bravo Gallardo',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Gabriela Fernandez',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Gloria Monzón',tipo:'3 veces por semana',importe:42750,cupo:3},{cliente:'Joselyn Mundarain',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Macarena Reyes',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Lujan Reyes',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Paula Bernardou',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Maria Paula Di Lello',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Natasha Arcuschin',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Daiana Helueni',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Mercedes Olguín Uribe',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Daniela KARINA Reguero',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Indira Blazquez',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Camila Daniela Melo',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Lucia De Biase',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Sofia Iglesias',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Vanina Basanta',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Macarena Berraondo',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Maria Belen Rey',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Avril Tosonotti',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Mariana Zabaleta',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Evgenia Kovaeva',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Soledad Luque',tipo:'1 vez por semana',importe:52000,cupo:1},{cliente:'Sofía Consani',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'María Pía Moralejo',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Carolina Pinchuk',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Julieta Portatadino',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Agustina Quevedo',tipo:'3 veces por semana',importe:85000,cupo:3},{cliente:'Agustina Cristiani',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'María Valentina Díaz',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Myriam Giles Paz',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Alejandro Canale',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Andrés Sirotzky',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Mariela Ruiz',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Miranda Ayala',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Julia Shulz',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Marcelo Molina',tipo:'2 veces por semana',importe:40000,cupo:2},{cliente:'Yolanda Obstronky',tipo:'2 veces por semana',importe:54000,cupo:2},{cliente:'Agostina Cingolani',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Florencia Huarte',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Natalia Soncin',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Eliana Silva',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Melina Silva',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Valentina Cerrutti',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Julieta Raimondi',tipo:'2 veces por semana',importe:36000,cupo:2},{cliente:'Felipe Fábregas',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Marta Gonzalez Muguruza',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Fernanda Navas Navas',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Maria Emilia Torre',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Shantal Gotlib',tipo:'1 vez por semana',importe:40000,cupo:1},{cliente:'Sofía Di Carlo',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Pilar Bermejo Villarreal',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'María Battaglia',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Eugenia Tomasetig',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Mauricio Castro',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'María José Grillo',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Yanett Peñalva',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'María Laura Marcos',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Patricia Castro',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Estefanía Mensi',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Julia Ponce',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Luiza Ferreira',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Jorgelina Faure',tipo:'3 veces por semana',importe:47500,cupo:3},{cliente:'Abril Corvalan',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Valeria Vallejos',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Elisabet Ines Mondo',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Lucía Ribeiro',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Yolanda Obstronky',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Cora Marco',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Mariela Ruiz',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Roxana Andrea Dicono',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Maria Laura Dicono',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Susana Golpe',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Virginia Komesu',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Maria Paula Franke',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Leandro Belluscio',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Andrea Fabiana Martini',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Ailin Elyeche',tipo:'2 veces por semana',importe:54000,cupo:2},{cliente:'Mora Pérez Esquivel',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Ingrid Munin',tipo:'5 veces por semana FLEXIBLE',importe:121500,cupo:5},{cliente:'Mariano Hernán Castelli',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Sofía Tavares',tipo:'Clase suelta',importe:18000,cupo:0.25},{cliente:'Alejandra Cervirizzo',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Marta Cuesta',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Bárbara Ferraro',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Pilar Guerrero',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Juan Iturbe',tipo:'BONIFICADO',importe:0,cupo:0},{cliente:'Mariela Donato',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Constanza Perez Arena',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Andrea Pietanezi',tipo:'3 veces por semana',importe:85500,cupo:3},{cliente:'Sofia Onorati',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Sofía Turazzini',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Andrea Imbroglia',tipo:'3 veces por semana',importe:49500,cupo:3},{cliente:'Erica Zurman',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Carolina Nadersohn',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Tali Slipak',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Irene Scherz',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Valentina Azul Tomalino',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Jimena Gomez',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Silvia Oneto',tipo:'5 veces por semana',importe:103500,cupo:5},{cliente:'Nathalie Karahanian',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Victoria Blanco',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Cecilia Mermoz',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Diego Pérez',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Lara Tamburi',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Brenda Becher',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Florencia De La Iglesia',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Valeria Vigil',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Tatiana Ant',tipo:'1 vez por semana FLEXIBLE',importe:52200,cupo:1},{cliente:'Natalia Davidian',tipo:'1 vez por semana',importe:20000,cupo:1},{cliente:'Abril Torregrosa',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Sol Ferrari',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Josefina Golisano',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Belen Caamaño Yugdar',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Daiana Rodriguez',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Diana Bekasova',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Marina Lantos',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Andrea Sisti',tipo:'3 veces por semana',importe:85000,cupo:3},{cliente:'Carla Ponce',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Mariana Vacas',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Oriana Lopez Suk',tipo:'2 veces por semana',importe:72000,cupo:2},{cliente:'Sergio Faijoo',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Verónica Veliz',tipo:'3 veces por semana',importe:95000,cupo:3},{cliente:'Cynthia Gabriela Vietto',tipo:'1 vez por semana',importe:58000,cupo:1},{cliente:'Lucila Fanelli',tipo:'2 veces por semana',importe:80000,cupo:2},{cliente:'Karen Mendez',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2},{cliente:'Silvia Miranda',tipo:'4 veces por semana FLEXIBLE',importe:103500,cupo:4},{cliente:'Cynthia Delonc',tipo:'1 vez por semana',importe:52200,cupo:1},{cliente:'Sol Wierzbinsky',tipo:'3 veces por semana FLEXIBLE',importe:85500,cupo:3},{cliente:'Eliana Romina Zurman Contreras',tipo:'2 veces por semana FLEXIBLE',importe:72000,cupo:2}]}
 };
+
+// ─── Datos Florida ────────────────────────────────────────────────────────
+// FLORIDA data defined above
 
 // ─── Estado ───────────────────────────────────────────────────────────────
 let localActivo = 'urquiza';
@@ -810,11 +1371,20 @@ function renderPnl(m){
   }
   html+=`<tr class="tr-total"><td>Ventas netas</td><td class="td-right">${fmt(ventas)}</td></tr>`;
   html+=`<tr class="tr-section"><td colspan="2">Gastos fijos</td></tr>`;
-  d.detalle.filter(g=>g.tipo==='fijo').forEach(g=>{html+=`<tr><td class="td-muted">${g.cat}</td><td class="td-danger">− ${fmt(g.monto)}</td></tr>`;});
+  (d.detalle_fijos||[]).forEach(g=>{html+=`<tr><td class="td-muted">${g.cat}</td><td class="td-danger">− ${fmt(g.monto)}</td></tr>`;});
   html+=`<tr class="tr-total"><td>Total gastos fijos</td><td class="td-danger">− ${fmt(d.gastos_fijos)}</td></tr>`;
   html+=`<tr class="tr-section"><td colspan="2">Gastos variables</td></tr>`;
-  d.detalle.filter(g=>g.tipo==='variable').forEach(g=>{html+=`<tr><td class="td-muted">${g.cat}</td><td class="td-danger">− ${fmt(g.monto)}</td></tr>`;});
+  (d.detalle_var||[]).forEach(g=>{html+=`<tr><td class="td-muted">${g.cat}</td><td class="td-danger">− ${fmt(g.monto)}</td></tr>`;});
   html+=`<tr class="tr-total"><td>Total gastos variables</td><td class="td-danger">− ${fmt(d.gastos_var)}</td></tr>`;
+  if((d.detalle_reinv||[]).length>0){
+    html+=`<tr class="tr-section"><td colspan="2">Reinversión</td></tr>`;
+    d.detalle_reinv.forEach(g=>{html+=`<tr><td class="td-muted">${g.cat}</td><td class="td-danger">− ${fmt(g.monto)}</td></tr>`;});
+    html+=`<tr class="tr-total"><td>Total reinversión</td><td class="td-danger">− ${fmt(d.reinversion)}</td></tr>`;
+  }
+  const utilidad = ventas - d.gastos_fijos - d.gastos_var;
+  const util_cls = utilidad>=0?'td-success':'td-danger';
+  html+=`<tr class="tr-total" style="background:var(--surface-2)"><td>Utilidad s/reinversión</td><td class="${util_cls}">${utilidad>=0?'+':''}${fmt(utilidad)}</td></tr>`;
+  html+=`<tr><td class="td-muted">% Utilidad</td><td class="${util_cls}" style="font-weight:700">${d.utilidad_pct>=0?'+':''}${d.utilidad_pct}%</td></tr>`;
   const cls=d.neto>=0?'td-success':'td-danger';
   html+=`<tr style="background:var(--bg)"><td style="font-weight:500;font-size:14px;padding:12px 10px">Resultado neto</td><td class="${cls}" style="font-size:14px;font-weight:500;padding:12px 10px">${d.neto>=0?'':'− '}${fmt(Math.abs(d.neto))}</td></tr>`;
   document.getElementById('pnl-body').innerHTML=html;
@@ -999,7 +1569,7 @@ function doLogout(){
 
 
 // ─── Florida: Acumulado ───────────────────────────────────────────────────
-const FL_MESES = ['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+const FL_MESES = ['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio'];
 
 function renderFlDashboardTotal(){
   const totalVentas = FL_MESES.reduce((s,m)=>s+FLORIDA[m].ventas+(FLORIDA[m].devolucion||0),0);
