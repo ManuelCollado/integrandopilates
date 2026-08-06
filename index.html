@@ -756,7 +756,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
   </div>
 </div>
 
-<div class="app" id="app" style="display:none">
+<div class="app" id="app-b" style="display:none">
   <aside class="sidebar">
     <div class="sidebar-logo">
       <div class="brand">Pilates Studio</div>
@@ -768,7 +768,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
       <button class="local-btn" id="btn-urquiza" onclick="setLocal('urquiza')">Urquiza</button>
     </div>
 
-    <nav class="sidebar-nav" id="nav-urquiza">
+    <nav class="sidebar-nav" id="nav-urquiza-b">
       <div class="nav-section">Franquicia</div>
       <button class="nav-item active" onclick="showScreen('dashboard')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
@@ -792,7 +792,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
       </button>
     </nav>
 
-    <nav class="sidebar-nav" id="nav-florida" style="display:none">
+    <nav class="sidebar-nav" id="nav-florida-b" style="display:none">
       <div class="nav-section">Local propio</div>
       <button class="nav-item active" onclick="showScreenFlorida('fl-dashboard')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
@@ -933,18 +933,18 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
           </div>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
-          <table><thead><tr><th style="padding:12px 16px">Cliente</th><th style="padding:12px 10px">Tipo</th><th class="td-right" style="padding:12px 16px 12px 10px">Importe</th><th class="td-right" style="padding:12px 16px 12px 10px">Cupos</th></tr></thead><tbody id="abonos-body"></tbody></table>
+          <table><thead><tr><th style="padding:12px 16px">Cliente</th><th style="padding:12px 10px">Tipo</th><th class="td-right" style="padding:12px 16px 12px 10px">Importe</th><th class="td-right" style="padding:12px 16px 12px 10px">Cupos</th></tr></thead><tbody id="abonos-body-b"></tbody></table>
         </div>
       </div>
 
       <!-- ═══════════ URQUIZA: CONFIG ═══════════ -->
-      <div id="screen-config" class="screen">
+      <div id="screen-config-b" class="screen">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
           <div>
             <div class="card">
               <div class="card-header"><span class="card-title">Datos de referencia</span></div>
-              <div class="form-row"><div><div class="form-label">Valor hora profesora ($)</div><div class="form-sub">Para calcular ingreso neto del franquiciado</div></div><input type="number" id="cfg-hora" value="0" onchange="saveConfig()"></div>
-              <div class="form-row"><div><div class="form-label">Horas de clase por mes</div></div><input type="number" id="cfg-horas" value="80" onchange="saveConfig()"></div>
+              <div class="form-row"><div><div class="form-label">Valor hora profesora ($)</div><div class="form-sub">Para calcular ingreso neto del franquiciado</div></div><input type="number" id="cfg-hora-b" value="0" onchange="saveConfig()"></div>
+              <div class="form-row"><div><div class="form-label">Horas de clase por mes</div></div><input type="number" id="cfg-horas-b" value="80" onchange="saveConfig()"></div>
             </div>
             <div class="card">
               <div class="card-header"><span class="card-title">Locales</span></div>
@@ -955,17 +955,17 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
           <div>
             <div class="card">
               <div class="card-header"><span class="card-title">Grilla de comisiones · Cláusula 8</span></div>
-              <table><thead><tr><th>% Ocupación</th><th class="td-right">Comisión</th></tr></thead><tbody id="grilla-tbody"></tbody></table>
+              <table><thead><tr><th>% Ocupación</th><th class="td-right">Comisión</th></tr></thead><tbody id="grilla-tbody-b"></tbody></table>
             </div>
           </div>
         </div>
       </div>
 
       <!-- ═══════════ FLORIDA: DASHBOARD ═══════════ -->
-      <div id="screen-fl-dashboard" class="screen">
+      <div id="screen-fl-dashboard-b" class="screen">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Florida · Vicente López</span>
-          <div class="month-tabs" id="fl-month-tabs">
+          <div class="month-tabs" id="fl-month-tabs-b">
             <button class="month-tab" onclick="setMesFlorida('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesFlorida('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesFlorida('Enero')">Ene</button>
@@ -979,10 +979,10 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
           </div>
         </div>
         <div class="metrics-grid">
-          <div class="metric"><div class="metric-label">Ventas netas</div><div class="metric-value" id="fl-ventas">—</div><div class="metric-sub" id="fl-mes-label">—</div></div>
-          <div class="metric"><div class="metric-label">Gastos totales</div><div class="metric-value" id="fl-gastos">—</div><div class="metric-sub">Fijos + variables</div></div>
-          <div class="metric"><div class="metric-label">Gastos fijos</div><div class="metric-value" id="fl-fijos">—</div><div class="metric-sub" id="fl-fijos-pct">—</div></div>
-          <div class="metric"><div class="metric-label">Resultado neto</div><div class="metric-value" id="fl-neto">—</div><div class="metric-sub" id="fl-margen">—</div></div>
+          <div class="metric"><div class="metric-label">Ventas netas</div><div class="metric-value" id="fl-ventas-b">—</div><div class="metric-sub" id="fl-mes-label-b">—</div></div>
+          <div class="metric"><div class="metric-label">Gastos totales</div><div class="metric-value" id="fl-gastos-b">—</div><div class="metric-sub">Fijos + variables</div></div>
+          <div class="metric"><div class="metric-label">Gastos fijos</div><div class="metric-value" id="fl-fijos-b">—</div><div class="metric-sub" id="fl-fijos-pct-b">—</div></div>
+          <div class="metric"><div class="metric-label">Resultado neto</div><div class="metric-value" id="fl-neto-b">—</div><div class="metric-sub" id="fl-margen-b">—</div></div>
         </div>
         <div class="card">
           <div class="card-header"><span class="card-title">Evolución mensual · Florida</span></div>
@@ -991,12 +991,12 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
             <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#E24B4A;display:inline-block"></span>Gastos totales</span>
             <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75;display:inline-block"></span>Resultado neto</span>
           </div>
-          <div style="position:relative;height:240px"><canvas id="fl-evol-chart" role="img" aria-label="Evolución Florida">.</canvas></div>
+          <div style="position:relative;height:240px"><canvas id="fl-evol-chart-b" role="img" aria-label="Evolución Florida">.</canvas></div>
         </div>
       </div>
 
       <!-- ═══════════ FLORIDA: P&L ═══════════ -->
-      <div id="screen-fl-pnl" class="screen">
+      <div id="screen-fl-pnl-b" class="screen">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">P&amp;L detallado · Florida</span>
           <div class="month-tabs">
@@ -1021,7 +1021,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
       </div>
 
       <!-- ═══════════ FLORIDA: GASTOS POR CATEGORÍA ═══════════ -->
-      <div id="screen-fl-gastos" class="screen">
+      <div id="screen-fl-gastos-b" class="screen">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Egresos por categoría · Florida</span>
           <div class="month-tabs">
@@ -1045,7 +1045,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
 
 
       <!-- ═══════════ FLORIDA: RETIROS ═══════════ -->
-      <div id="screen-fl-retiros" class="screen">
+      <div id="screen-fl-retiros-b" class="screen">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
           <span style="font-size:18px;font-weight:500">Retiros · Florida</span>
         </div>
@@ -1148,8 +1148,8 @@ function setLocal(l) {
   localActivo = l;
   document.getElementById('btn-urquiza').classList.toggle('active', l==='urquiza');
   document.getElementById('btn-florida').classList.toggle('active', l==='florida');
-  document.getElementById('nav-urquiza').style.display = l==='urquiza' ? 'block' : 'none';
-  document.getElementById('nav-florida').style.display = l==='florida' ? 'block' : 'none';
+  document.getElementById('nav-urquiza-b').style.display = l==='urquiza' ? 'block' : 'none';
+  document.getElementById('nav-florida-b').style.display = l==='florida' ? 'block' : 'none';
   if (l==='urquiza') {
     showScreen('dashboard');
   } else {
@@ -1163,7 +1163,7 @@ const U_TITLES = {dashboard:['Dashboard','Donado · Villa Ortúzar'],comparativa
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById('screen-'+id).classList.add('active');
-  document.querySelectorAll('#nav-urquiza .nav-item').forEach((b,i)=>b.classList.toggle('active',U_SCREENS[i]===id));
+  document.querySelectorAll('#nav-urquiza-b .nav-item').forEach((b,i)=>b.classList.toggle('active',U_SCREENS[i]===id));
   const [t,m] = U_TITLES[id];
   document.getElementById('topbar-title').textContent = t;
   document.getElementById('topbar-meta').textContent = m;
@@ -1178,7 +1178,7 @@ const FL_TITLES = {'fl-dashboard':['Dashboard','Florida · Vicente López'],'fl-
 function showScreenFlorida(id) {
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById('screen-'+id).classList.add('active');
-  document.querySelectorAll('#nav-florida .nav-item').forEach((b,i)=>b.classList.toggle('active',FL_SCREENS[i]===id));
+  document.querySelectorAll('#nav-florida-b .nav-item').forEach((b,i)=>b.classList.toggle('active',FL_SCREENS[i]===id));
   const [t,m] = FL_TITLES[id];
   document.getElementById('topbar-title').textContent = t;
   document.getElementById('topbar-meta').textContent = m;
@@ -1234,8 +1234,8 @@ function renderTopAbonos(mes, totalFact) {
   ).join('');
 }
 function renderNeto(s) {
-  const hora = parseInt(document.getElementById('cfg-hora').value)||0;
-  const hmes = parseInt(document.getElementById('cfg-horas').value)||80;
+  const hora = parseInt(document.getElementById('cfg-hora-b').value)||0;
+  const hmes = parseInt(document.getElementById('cfg-horas-b').value)||80;
   const costo = hora*hmes;
   document.getElementById('neto-fact').textContent = fmt(s.fact);
   document.getElementById('neto-com').textContent = '− '+fmt(s.comision);
@@ -1311,19 +1311,19 @@ function setMesAbonos(m){mesAbonos=m;document.querySelectorAll('#screen-abonos .
 function filtrarAbonos(v){abonosFiltro=v;renderAbonos();}
 function renderAbonos(){
   const rows=DONADO[mesAbonos].rows.filter(r=>!abonosFiltro||r.tipo.toLowerCase().includes(abonosFiltro.toLowerCase()));
-  document.getElementById('abonos-body').innerHTML=rows.map(r=>`<tr><td style="padding:9px 16px">${r.cliente}</td><td style="padding:9px 10px">${r.tipo==='BONIFICADO'?'<span style="font-size:11px;padding:2px 8px;border-radius:20px;background:var(--surface2);color:var(--text3)">Bonificado</span>':r.tipo}</td><td class="td-right" style="padding:9px 16px 9px 10px">${r.importe>0?fmt(r.importe):'—'}</td><td class="td-right" style="padding:9px 16px 9px 10px">${r.cupo}</td></tr>`).join('');
+  document.getElementById('abonos-body-b').innerHTML=rows.map(r=>`<tr><td style="padding:9px 16px">${r.cliente}</td><td style="padding:9px 10px">${r.tipo==='BONIFICADO'?'<span style="font-size:11px;padding:2px 8px;border-radius:20px;background:var(--surface2);color:var(--text3)">Bonificado</span>':r.tipo}</td><td class="td-right" style="padding:9px 16px 9px 10px">${r.importe>0?fmt(r.importe):'—'}</td><td class="td-right" style="padding:9px 16px 9px 10px">${r.cupo}</td></tr>`).join('');
 }
 
 // ─── Config ───────────────────────────────────────────────────────────────
 function renderGrilla(){
-  document.getElementById('grilla-tbody').innerHTML=TRAMOS.map(t=>`<tr><td class="td-muted">${t.label}</td><td class="td-right">${t.pct}%</td></tr>`).join('');
+  document.getElementById('grilla-tbody-b').innerHTML=TRAMOS.map(t=>`<tr><td class="td-muted">${t.label}</td><td class="td-right">${t.pct}%</td></tr>`).join('');
 }
 
 // ─── Florida: Dashboard ───────────────────────────────────────────────────
 function setMesFlorida(m){
   mesFlorida=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
-  document.querySelectorAll('#screen-fl-dashboard .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
+  document.querySelectorAll('#screen-fl-dashboard-b .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
   if(m==='total') renderFlDashboardTotal();
   else renderFlDashboard();
 }
@@ -1331,13 +1331,13 @@ function renderFlDashboard(){
   const d=FLORIDA[mesFlorida];
   const ventas=d.ventas+(d.devolucion||0)+(d.pendientes||0);
   const margen=d.ventas>0?Math.round(d.neto/ventas*100):0;
-  document.getElementById('fl-ventas').textContent=fmt(ventas);
-  document.getElementById('fl-mes-label').textContent=mesFlorida+' 2025/2026';
-  document.getElementById('fl-gastos').textContent=fmt(d.gastos_total);
-  document.getElementById('fl-fijos').textContent=fmt(d.gastos_fijos);
-  document.getElementById('fl-fijos-pct').textContent=Math.round(d.gastos_fijos/d.gastos_total*100)+'% del total';
-  document.getElementById('fl-neto').textContent=fmt(d.neto);
-  document.getElementById('fl-margen').textContent='Margen '+margen+'%';
+  document.getElementById('fl-ventas-b').textContent=fmt(ventas);
+  document.getElementById('fl-mes-label-b').textContent=mesFlorida+' 2025/2026';
+  document.getElementById('fl-gastos-b').textContent=fmt(d.gastos_total);
+  document.getElementById('fl-fijos-b').textContent=fmt(d.gastos_fijos);
+  document.getElementById('fl-fijos-pct-b').textContent=Math.round(d.gastos_fijos/d.gastos_total*100)+'% del total';
+  document.getElementById('fl-neto-b').textContent=fmt(d.neto);
+  document.getElementById('fl-margen-b').textContent='Margen '+margen+'%';
 
   setTimeout(()=>{
     if(flEvolChart)flEvolChart.destroy();
@@ -1346,7 +1346,7 @@ function renderFlDashboard(){
     const vData=meses.map(m=>FLORIDA[m].ventas+(FLORIDA[m].devolucion||0));
     const gData=meses.map(m=>FLORIDA[m].gastos_total);
     const nData=meses.map(m=>FLORIDA[m].neto);
-    const ctx=document.getElementById('fl-evol-chart').getContext('2d');
+    const ctx=document.getElementById('fl-evol-chart-b').getContext('2d');
     flEvolChart=new Chart(ctx,{type:'bar',data:{labels,datasets:[
       {label:'Ventas netas',data:vData,backgroundColor:'#2d2a2699',borderColor:'#2d2a26',borderWidth:1,borderRadius:3},
       {label:'Gastos',data:gData,backgroundColor:'#E24B4A66',borderColor:'#E24B4A',borderWidth:1,borderRadius:3},
@@ -1359,7 +1359,7 @@ function renderFlDashboard(){
 function setMesPnl(m){
   mesPnl=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
-  document.querySelectorAll('#screen-fl-pnl .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
+  document.querySelectorAll('#screen-fl-pnl-b-b .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
   if(m==='total') renderPnlTotal();
   else renderPnl(m);
 }
@@ -1400,7 +1400,7 @@ function renderPnl(m){
 function setMesGastos(m){
   mesGastos=m;
   const label = m==='total'?'Acumulado':m.slice(0,3);
-  document.querySelectorAll('#screen-fl-gastos .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
+  document.querySelectorAll('#screen-fl-gastos-b .month-tab').forEach(b=>b.classList.toggle('active',b.textContent.trim()===label));
   if(m==='total') renderGastosTotal();
   else renderGastos(m);
 }
@@ -1584,13 +1584,13 @@ function renderFlDashboardTotal(){
   const totalNeto   = FL_MESES.reduce((s,m)=>s+FLORIDA[m].neto,0);
   const margen = Math.round(totalNeto/totalVentas*100);
 
-  document.getElementById('fl-ventas').textContent = fmt(totalVentas);
-  document.getElementById('fl-mes-label').textContent = 'Nov 2025 → May 2026';
-  document.getElementById('fl-gastos').textContent = fmt(totalGastos);
-  document.getElementById('fl-fijos').textContent = fmt(totalFijos);
-  document.getElementById('fl-fijos-pct').textContent = Math.round(totalFijos/totalGastos*100)+'% del total';
-  document.getElementById('fl-neto').textContent = fmt(totalNeto);
-  document.getElementById('fl-margen').textContent = 'Margen '+margen+'%';
+  document.getElementById('fl-ventas-b').textContent = fmt(totalVentas);
+  document.getElementById('fl-mes-label-b').textContent = 'Nov 2025 → May 2026';
+  document.getElementById('fl-gastos-b').textContent = fmt(totalGastos);
+  document.getElementById('fl-fijos-b').textContent = fmt(totalFijos);
+  document.getElementById('fl-fijos-pct-b').textContent = Math.round(totalFijos/totalGastos*100)+'% del total';
+  document.getElementById('fl-neto-b').textContent = fmt(totalNeto);
+  document.getElementById('fl-margen-b').textContent = 'Margen '+margen+'%';
 
   // Reusar el gráfico de evolución (ya está renderizado)
   setTimeout(()=>{
@@ -1598,7 +1598,7 @@ function renderFlDashboardTotal(){
     const labels=['Nov','Dic','Ene','Feb','Mar','Abr','May','Jun'];
     const gData=FL_MESES.map(m=>FLORIDA[m].gastos_total);
     const nData=FL_MESES.map(m=>FLORIDA[m].neto);
-    const ctx=document.getElementById('fl-evol-chart').getContext('2d');
+    const ctx=document.getElementById('fl-evol-chart-b').getContext('2d');
     flEvolChart=new Chart(ctx,{type:'bar',data:{labels,datasets:[
       {label:'Ventas netas',data:vData,backgroundColor:'#2d2a2699',borderColor:'#2d2a26',borderWidth:1,borderRadius:3},
       {label:'Gastos',data:gData,backgroundColor:'#E24B4A66',borderColor:'#E24B4A',borderWidth:1,borderRadius:3},
