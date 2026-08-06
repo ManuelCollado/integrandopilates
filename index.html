@@ -380,7 +380,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Florida · Vicente López</span>
           <div class="month-tabs" id="fl-month-tabs">
-            <button class="month-tab active" onclick="setMesFlorida('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesFlorida('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesFlorida('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesFlorida('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesFlorida('Febrero')">Feb</button>
@@ -414,7 +414,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">P&amp;L detallado · Florida</span>
           <div class="month-tabs">
-            <button class="month-tab active" onclick="setMesPnl('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesPnl('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesPnl('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesPnl('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesPnl('Febrero')">Feb</button>
@@ -439,7 +439,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Egresos por categoría · Florida</span>
           <div class="month-tabs">
-            <button class="month-tab active" onclick="setMesGastos('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesGastos('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesGastos('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesGastos('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesGastos('Febrero')">Feb</button>
@@ -966,7 +966,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Florida · Vicente López</span>
           <div class="month-tabs" id="fl-month-tabs">
-            <button class="month-tab active" onclick="setMesFlorida('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesFlorida('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesFlorida('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesFlorida('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesFlorida('Febrero')">Feb</button>
@@ -1000,7 +1000,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">P&amp;L detallado · Florida</span>
           <div class="month-tabs">
-            <button class="month-tab active" onclick="setMesPnl('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesPnl('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesPnl('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesPnl('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesPnl('Febrero')">Feb</button>
@@ -1025,7 +1025,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
           <span style="font-size:18px;font-weight:500">Egresos por categoría · Florida</span>
           <div class="month-tabs">
-            <button class="month-tab active" onclick="setMesGastos('Noviembre')">Nov</button>
+            <button class="month-tab" onclick="setMesGastos('Noviembre')">Nov</button>
             <button class="month-tab" onclick="setMesGastos('Diciembre')">Dic</button>
             <button class="month-tab" onclick="setMesGastos('Enero')">Ene</button>
             <button class="month-tab" onclick="setMesGastos('Febrero')">Feb</button>
@@ -1182,7 +1182,7 @@ function showScreenFlorida(id) {
   const [t,m] = FL_TITLES[id];
   document.getElementById('topbar-title').textContent = t;
   document.getElementById('topbar-meta').textContent = m;
-  if (id==='fl-dashboard') renderFlDashboard();
+  if (id==='fl-dashboard') { setMesFlorida(mesFlorida); }
   if (id==='fl-pnl') renderPnl(mesPnl);
   if (id==='fl-gastos') renderGastos(mesGastos);
   if (id==='fl-retiros') renderRetiros();
