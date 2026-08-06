@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v1786015949 -->
+<!-- v1786016808 -->
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -395,7 +395,7 @@ input[type=number] { width: 120px; text-align: right; font-family: 'DM Mono', mo
         </div>
         <div class="metrics-grid">
           <div class="metric"><div class="metric-label">Ventas netas</div><div class="metric-value" id="fl-ventas">—</div><div class="metric-sub" id="fl-mes-label">—</div></div>
-          <div class="metric"><div class="metric-label">Gastos totales</div><div class="metric-value" id="fl-gastos">—</div><div class="metric-sub">Fijos + variables</div></div>
+          <div class="metric"><div class="metric-label">Gastos operativos</div><div class="metric-value" id="fl-gastos">—</div><div class="metric-sub">Fijos + variables</div></div>
           <div class="metric"><div class="metric-label">Gastos fijos</div><div class="metric-value" id="fl-fijos">—</div><div class="metric-sub" id="fl-fijos-pct">—</div></div>
           <div class="metric"><div class="metric-label">Resultado neto</div><div class="metric-value" id="fl-neto">—</div><div class="metric-sub" id="fl-margen">—</div></div>
         </div>
@@ -782,12 +782,20 @@ function setMesFlorida(m){
 function renderFlDashboard(){
   const d=FLORIDA[mesFlorida];
   const ventas=d.ventas+(d.devolucion||0)+(d.pendientes||0);
-  const margen=d.ventas>0?Math.round(d.neto/ventas*100):0;
+  const gastosOperativos=d.gastos_fijos+d.gastos_var;
+  const margen=ventas>0?Math.round(d.neto/ventas*100):0;
   document.getElementById('fl-ventas').textContent=fmt(ventas);
   document.getElementById('fl-mes-label').textContent=mesFlorida+' 2025/2026';
-  document.getElementById('fl-gastos').textContent=fmt(d.gastos_total);
+  document.getElementById('fl-gastos').textContent=fmt(gastosOperativos);
+  // Subtítulo: si hay reinversión, mostrarla aparte
+  const gastosSubEl=document.getElementById('fl-gastos').parentElement.querySelector('.metric-sub');
+  if(gastosSubEl){
+    gastosSubEl.textContent = d.reinversion>0
+      ? 'Operativos · +'+fmt(d.reinversion)+' reinv.'
+      : 'Fijos + variables';
+  }
   document.getElementById('fl-fijos').textContent=fmt(d.gastos_fijos);
-  document.getElementById('fl-fijos-pct').textContent=Math.round(d.gastos_fijos/d.gastos_total*100)+'% del total';
+  document.getElementById('fl-fijos-pct').textContent=Math.round(d.gastos_fijos/gastosOperativos*100)+'% operativos';
   document.getElementById('fl-neto').textContent=fmt(d.neto);
   document.getElementById('fl-margen').textContent='Margen '+margen+'%';
 
@@ -795,8 +803,8 @@ function renderFlDashboard(){
     if(flEvolChart)flEvolChart.destroy();
     const meses=['Noviembre','Diciembre','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
     const labels=['Nov','Dic','Ene','Feb','Mar','Abr','May','Jun','Jul'];
-    const vData=meses.map(m=>FLORIDA[m].ventas+(FLORIDA[m].devolucion||0));
-    const gData=meses.map(m=>FLORIDA[m].gastos_total);
+    const vData=meses.map(m=>FLORIDA[m].ventas+(FLORIDA[m].devolucion||0)+(FLORIDA[m].pendientes||0));
+    const gData=meses.map(m=>FLORIDA[m].gastos_fijos+FLORIDA[m].gastos_var);
     const nData=meses.map(m=>FLORIDA[m].neto);
     const ctx=document.getElementById('fl-evol-chart').getContext('2d');
     flEvolChart=new Chart(ctx,{type:'bar',data:{labels,datasets:[
